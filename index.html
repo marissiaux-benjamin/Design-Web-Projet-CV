@@ -143,8 +143,17 @@
                 Remplissez le formulaire pour me contacter.
             </p>
             <form id="contact" action="#" method="get">
-                <input type="checkbox" name="conscent_therms" id="conscent_therms">
+                <input type="text" placeholder="Nom, Pr&eacute;nom" required id="name" class="input_form">
+                <label for="name"></label>
+                <input type="tel" placeholder="T&eacute;l&eacute;phone" required id="phone" class="input_form">
+                <label for="phone"></label>
+                <input type="email" placeholder="e&nbsp;-&nbsp;mail" required id="email" class="input_form">
+                <label for="email"></label>
+                <textarea maxlength="500" placeholder="&Eacute;crivez votre id&eacute;e de projet ou des questions me concernant…" rows="5" cols="30" required id="desc"></textarea>
+                <label for="desc"></label>
+                <input type="checkbox" name="conscent_therms" id="conscent_therms" class="input_form">
                 <label for="conscent_therms">Je certifie avoir pris connaissance et accepter les <span class="highlighted_green">conditions relatives &agrave; la Vie Priv&eacute;e.</span></label>
+                <input type="submit">
             </form>
 
         </section>
