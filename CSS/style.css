@@ -1,3 +1,7 @@
-.g_section{
+.g_section {
     background-color: #FAFAFA;
+}
+
+.color_section {
+    background: linear-gradient(45deg, #EBEBEB, #FFDEDE);
 }
