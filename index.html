@@ -11,287 +11,405 @@
     <link rel="stylesheet" href="/CSS/style.css">
     <title>Benjamin-Marissiaux-CV</title>
 </head>
-    <body>
-        <h1 class="hidden">Benjamin-Marissiaux-CV</h1>
-        <header>
-            <nav>
-                <h2 class="hidden">Navigation Principale</h2>
-                <ul>
-                    <li><a href="#">Mes exp&eacute;riences</a></li>
-                    <li><a href="#">Ma&icirc;trise de langages</a></li>
-                    <li><a href="#">Contactez&nbsp;-&nbsp;moi</a></li>
-                    <li><a href="#">Autres skills</a></li>
-                    <li><a href="#">Mes projets</a></li>
-                    <li><a href="#">Mes inspirations</a></li>
-                    <li><img src="/img" alt="icon téléphone"><a href="#">0474&nbsp;40&nbsp;51&nbsp;22</a></li>
-                </ul>
-            </nav>
-        </header>
-    <main>
-        <section>
-            <h2>Un Designer Web Proche de ses clients</h2>
-            <p>D&eacute;velopeur frontend en Wallonie&nbsp;-&nbsp;Li&egrave;ge, 342 Fexhe-le-Haut-Clocher.</p>
-            <a href="#">Mon Portfolio</a>
-            <a href="#">Mes tarifs</a>
-            <img src="/img" alt="photo de Benjamin Marissiaux dans un décor rural">
-        </section>
-        <section>
-            <h2>Mes exp&eacute;riences professionnelles</h2>
-            <p>Voici la liste de mes exp&eacute;riences professionnelles ant&eacute;rieures</p>
-            <ul>
-                <li><img src="/img/logo-gaming1.jpeg" alt="logo de Gaming1"></li>
-                <li><img src="/img/agence-onante-cinq.png" alt="logo de de l'agence nonante cinque"></li>
-                <li><img src="/icons/SVG/profile.svg" alt="icon de progile couleur verte"></li>
-                <li><img src="/img/LM-Logo.png" alt="logo de LM"></li>
-                <li><img src="/img/odoo_logo.png" alt="logo Odoo"></li>
-            </ul>
-            <div>
-                Voulez&nbsp;-&nbsp;vous voir mes autres exp&eacute;riences indirecte avec le web?
-                <a href="#">Plus d’exp&eacute;riences</a>
-            </div>
-            <img src="/img" alt="Photo de Benjamin Marissiaux pointant vers plus d'expérience.">
-            <aside>
-                <h3>Vous souhaitez me rencontrer&nbsp;?</h3>
-                <p>Contactez&nbsp;-&nbsp;moi pour un projet ou une entre&nbsp;-&nbsp;vue</p>
-                <a href="#contact"> Remplissez mon formulaire</a>
-            </aside>
-        </section>
-        <section>
-            <h2>Ma&icirc;trise de langages</h2>
-            <a href="#">Voir mes comp&eacute;ences en liste</a>
-            <progress max="100" value="76"></progress>
-            <p>3,8 sur 5 de moyenne</p>
-            <ul>
-                <li>
-                    <p class="language">
-                        <dfn>Javascript</dfn> Language de programmation orienté objet.
-                    </p>
-                    <progress max="100" value="86" class="star_bar"></progress>
-                    <p>
-                        Je poss&egrave;de des comp&eacute;tences assez d&eacute;velopp&eacute;es en javascript. Ayant beaucoup travaill&eacute; dans le frontend, j&rsquo;ai acquis pas mal de savoir faire en
-                        <abbr title="Javascript">JS</abbr>.
-                    </p>
-                </li>
-                <li>
-                    <p class="language">
-                        <dfn><abbr title="Cascading style sheet">CSS</abbr> Cascading Style Sheet</dfn>
-                    </p>
-                    <progress max="100" value="98" class="star_bar"></progress>
-                    <p>
-                        Mes comp&eacute;tences en <abbr title="Cascading Style Sheet">CSS</abbr> sont mon plus gros points fort, ce langage me passionne et n&rsquo; plus de secret pour moi.
-                    </p>
-                </li>
-                <li>
-                    <p class="language">
-                        <dfn><abbr title="hypertext markup language">html</abbr>Hypertext Markup Language</dfn>
-                    </p>
-                    <progress max="100" value="95" class="star_bar"></progress>
-                    <p>
-                        <abbr title="Hypertext Markup Language">HTML</abbr> est le deuxi&egrave; langage que je ma&icirc;trise le mieux. J&rsquo;ai pu l&rsquo;enseigner dans le secondaire et cela m&rsquo;a permis de bien approfondir les bases.
-                    </p>
-                </li>
-                <li>
-                    <p class="language">
-                        <dfn><abbr title="Structured Query Language">SQL</abbr> Structured Query Language</dfn>
-                    </p>
-                    <progress max="100" value="70" class="star_bar"></progress>
-                    <p>
-                        Je poss&egrave;de les bases en <abbr title="Structured Query Language">SQL</abbr> et je peux donc me d&eacute;brouiller avec ce langage.
-                    </p>
-                </li>
-                <li>
-                    <p class="language">
-                        <dfn>Typescript</dfn> Language de programmation open source
-                    </p>
-                    <progress max="100" value="88" class="star_bar"></progress>
-                    <p>
-                        Typescript &eacute;tant un d&eacute;riv&eacute; de Javascript, j&rsquo;ai eu l&rsquo;occasion de beaucoup travailler avec ce langage notamment dans le cadre de cr&eacute;ation de jeu mobile.
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        <dfn><abbr title="Hypertext Preprocessor">Php</abbr> Hypertext Preprocessor</dfn>
-                    </p>
-                    <progress max="100" value="85" class="star_bar"></progress>
-                    <p>
-                        J&rsquo;ai travaill&eacute; en tant que backend d&eacute;velopper pendant un certain temps et j&rsquo;ai pu am&eacute;liorer mes comp&eacute;tences dans ce domaine.
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        <dfn>Python</dfn> Language interpret&eacute;
-                    </p>
-                    <progress max="100" value="83"></progress>
-                    <p>
+<body>
+<h1 class="hidden" id="start">Benjamin- <span itemprop="familyName">Marissiaux</span>-CV</h1>
+<header>
+    <nav>
+        <h2 class="hidden">Navigation Principale</h2>
+        <ul>
+            <li><a href="#xp">Mes exp&eacute;riences</a></li>
+            <li><a href="#languages">Ma&icirc;trise de langages</a></li>
+            <li><a href="#contact">Contactez&nbsp;-&nbsp;moi</a></li>
+            <li><a href="#about_me">Autres skills</a></li>
+            <li><a href="#projets">Mes projets</a></li>
+            <li><a href="#">Mails et T&eacute;l&eacute;phone</a></li>
+            <li><img src="/img" alt="icon téléphone" itemprop="image"><a href="#"><span itemprop="telephone">0474&nbsp;40&nbsp;51&nbsp;22</span></a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section>
+        <h2>Un Designer Web Proche de ses clients</h2>
+        <p>
+            D&eacute;velopeur frontend en <span itemprop="workLocation">Wallonie</span>&nbsp;-&nbsp;<span
+                itemprop="homeLocation">Li&egrave;ge, 342 Fexhe-le-Haut-Clocher.</span>
+        </p>
+        <a href="#">Mon Portfolio</a>
+        <a href="#">Mes tarifs</a>
+        <img src="/img" alt="photo de Benjamin Marissiaux dans un décor rural" itemprop="image">
+    </section>
+    <section id="xp">
+        <h2>Mes exp&eacute;riences professionnelles</h2>
+        <p>Voici la liste de mes exp&eacute;riences professionnelles ant&eacute;rieures</p>
+        <ul>
+            <li>
+                <section>
+                    <h3>
+                        Web Designer Gaming 1
+                    </h3>
 
-                    </p>
-                </li>
-                <li>
-                    <p class="language">
-                        <dfn>Ruby</dfn>
-                    </p>
-                    <progress max="100" value="74"></progress>
+                    <img src="/img/logo-gaming1.jpeg" alt="logo de Gaming1" itemprop="image">
                     <p>
-                        J&rsquo;ai pu utilis&eacute; se langage &agrave; plusieurs reprise durant mes jobs pr&eacute;c&eacute;dents. Il est aussi bien utilisable en frontend qu&rsquo;en backend.
+                        Il y a 1 an, je travaillais dans la soci&eacute;t&eacute; de jeux en ligne Gaming 1. Je m&rsquo;occupais
+                        du c&ocirc;t&eacute; design d&rsquo;interface o&uacute; je confectionnais
+                        l&rsquo;arri&egrave;re plan des diff&eacute;rent jeux de l&rsquo;entreprise. Je travaillais en
+                        &eacute;quipe avec d&rsquo;autres coll&egrave;gues et des d&eacute;veloppeurs backend.
                     </p>
-                </li>
-            </ul>
-        </section>
-        <section>
-            <h2>Me contacter</h2>
-            <p>
-                Remplissez le formulaire pour me contacter.
-            </p>
-            <form id="contact" action="#" method="get">
-                <input type="text" placeholder="Nom, Pr&eacute;nom" required id="name" class="input_form">
-                <label for="name"></label>
-                <input type="tel" placeholder="T&eacute;l&eacute;phone" required id="phone" class="input_form">
-                <label for="phone"></label>
-                <input type="email" placeholder="e&nbsp;-&nbsp;mail" required id="email" class="input_form">
-                <label for="email"></label>
-                <textarea maxlength="500" placeholder="&Eacute;crivez votre id&eacute;e de projet ou des questions me concernant…" rows="5" cols="30" required id="desc"></textarea>
-                <label for="desc"></label>
-                <input type="checkbox" name="conscent_therms" id="conscent_therms" class="input_form">
-                <label for="conscent_therms">Je certifie avoir pris connaissance et accepter les <span class="highlighted_green">conditions relatives &agrave; la Vie Priv&eacute;e.</span></label>
-                <input type="submit">
-            </form>
-        </section>
-        <section id="about_me">
-            <img src="/img" alt="Une photo de Benjamin Marissiaux">
-            <h2>Apprenez&nbsp;-&nbsp;en plus sur moi et mes soft skills&nbsp;!</h2>
-            <article>
-                <h3 class="hidden">Soft Skill</h3>
-                <p>
-                    Je poss&egrave;de plusieurs softs skills que j&rsquo;ai acquis dans diff&eacute;rent domaine comme le sport, la lecture, les jeux vid&eacute;os ou m&ecirc;me dans mes environnements de travail pr&eacute;c&eacute;dents.
+                </section>
+            </li>
+            <li>
+                <section>
+                    <h3>
+                        Web designer Nonante cinq
+                    </h3>
+                    <img src="/img/agence-onante-cinq.png" alt="logo de de l'agence nonante cinque" itemprop="image">
+                    <p>
+                        Nonante cinq est une agence web qui travaill&eacute; sur de nombreux projets dont j&rsquo;ai fait partie car j&rsquo;y ai travaill&eacute; 4 ans.
+                        Avec une &eacute;quipe, nous avons r&eacute;alis&eacute; un design en collaboration avec Tui ou encore Proximus Picks ++.
+                    </p>
+                </section>
+            </li>
+            <li>
+                <section>
+                    <h3>
+                        Enseignant
+                    </h3>
+                    <img src="/icons/SVG/profile.svg" alt="icon de progile couleur verte" itemprop="image">
+                    <p>
+                        J&rsquo;ai enseign&eacute; l&rsquo;informatique dans l&rsquo;enseignement secondaire durant 3 ans. Cela m&rsquo;a permis de devenir structur&eacute; dans mes leçons
+                        ainsi que d&rsquo;&ecirc;tre plus clair dans mes explications et mon approche de probl&egrave;mes.
+                    </p>
+                </section>
+            </li>
+            <li>
+                <section>
+                    <h3>
+                        Web Designer LM Studio
+                    </h3>
+                    <img src="/img/LM-Logo.png" alt="logo de LM" itemprop="image">
+                    <p>
+                        J&rsquo;ai travaill&eacute; pour cette agence pendant 2 ans. &Eacute;tant une start up, j&rsquo;ai du jou&eacute; plusieurs
+                        r&ocirc;les au sein de l&rsquo;entreprise. J&rsquo;ai du m&rsquo;occuper aussi bien de front&nbsp;-&nbsp;end que de back&nbsp;-&nbsp;end mais
+                        aussi Community manager ou encore rédacteur web. &Aacute; l&nbsp;aide d&nbsp;une &eacute;quipe soud&eacute;e, j&rsquo;ai pu travailler sur
+                        diff&eacute;rents projets comme «&nbsp;Green to Friendly&nbsp;».
+                    </p>
+                </section>
+            </li>
+            <li>
+                <section>
+                    <h3>
+                        Web designer Odoo
+                    </h3>
+                    <img src="/img/odoo_logo.png" alt="logo Odoo" itemprop="image">
+                    <p>
+                        Au d&eacute;but de ma carri&egrave;re, j&rsquo;ai &eacute;t&eacute; embauch&eacute; par l&rsquo;agence Odoo. Ils recherchaient des jeunes qu&rsquo;ils pouvaient former en interne.
+                        J&rsquo;y ai travaill&eacute; pendant 3 ans avant de changer d&rsquo;agence. J&rsquo;ai notamment collabor&eacute; sur &laquo;Party Pime&raquo; et &laquo;Blue Beat&raquo;.
+                        Cela m&rsquo;a permis de construire des bases solides pour la suite de ma carri&egrave;re.
+                    </p>
+                </section>
+            </li>
+        </ul>
+        <div>
+            Voulez&nbsp;-&nbsp;vous voir mes autres exp&eacute;riences indirecte avec le web&nbsp;?
+            <a href="#">Plus d’exp&eacute;riences</a>
+        </div>
+        <img src="/img" alt="Photo de Benjamin Marissiaux pointant vers plus d'expérience." itemprop="image">
+        <aside>
+            <h3>Vous souhaitez me rencontrer&nbsp;?</h3>
+            <p>Contactez&nbsp;-&nbsp;moi pour un projet ou une entre&nbsp;-&nbsp;vue</p>
+            <a href="#contact"> Remplissez mon formulaire</a>
+        </aside>
+    </section>
+    <section id="languages" class="g_section">
+        <h2>Ma&icirc;trise de langages</h2>
+        <a href="#">Voir mes comp&eacute;ences en liste</a>
+        <progress max="100" value="76"></progress>
+        <p>3,8 sur 5 de moyenne</p>
+        <ul>
+            <li>
+                <p class="language">
+                    <dfn>Javascript</dfn> Langage de programmation orient&eacute; objet.
                 </p>
+                <progress max="100" value="86" class="star_bar"></progress>
                 <p>
-                    Je suis quelqu&rsquo;un de tr&egrave;s patient avec les autres ou m&ecirc;me en g&eacute;n&eacute;ral. Je peux aussi bien attendre qu&rsquo;on me donne des informations mais aussi patient pour expliquer&nbsp;/&nbsp;enseigner des choses &agrave; des personnes. J&rsquo;ai acquis ma patience gr&acirc;ce &agrave; mon métier d&rsquo;eseignant.
+                    Je poss&egrave;de des comp&eacute;tences assez d&eacute;velopp&eacute;es en javascript. Ayant
+                    beaucoup travaill&eacute; dans le frontend, j&rsquo;ai acquis pas mal de savoir faire en
+                    <abbr title="Javascript">JS</abbr>.
                 </p>
+            </li>
+            <li>
+                <p class="language">
+                    <dfn><abbr title="Cascading style sheet">CSS</abbr> Cascading Style Sheet</dfn>
+                </p>
+                <progress max="100" value="98" class="star_bar"></progress>
                 <p>
-                    Au del&agrave; de ma patience, je suis quelqu&rsquo;un qui s&rsquo;adapte assez vite aux nouvelles situations auxquelles je suis confront&eacute;. Par exemple, je mr&rsquo;adapte vite &agrave; mon adversaire au tennis de table. J&rsquo;ai donc appris &agrave; m&rsquo;adapter gr&acirc;ce &agrave; ce sport.
+                    Mes comp&eacute;tences en <abbr title="Cascading Style Sheet">CSS</abbr> est mon point le plus
+                    fort, ce langage me passionne et n&rsquo;a plus de secret pour moi.
                 </p>
+            </li>
+            <li>
+                <p class="language">
+                    <dfn><abbr title="hypertext markup language">html</abbr>Hypertext Markup Language</dfn>
+                </p>
+                <progress max="100" value="95" class="star_bar"></progress>
                 <p>
-                    Je poss&egrave;de aussi un esprit d&rsquo;&eacute;quipe. Je suis quelqu&rsquo;un qui performe beaucoup mieux dans une &eacute;quipe que tout seul. Mon esprit d&rsquo;&eacute;quipe est donc assez bien d&eacute;velopp&eacute;. J&rsquo;ai pu l&rsquo;acqu&eacute;rir gr&acirc;ce aux jeux vidéo notamment mais aussi gr&acirc;ce &agrave; d&rsquo;autre activit&eacute;s personnelle comme le tennis de table.
+                    <abbr title="Hypertext Markup Language">HTML</abbr> est le deuxi&egrave; langage que je ma&icirc;trise
+                    le mieux. J&rsquo;ai pu l&rsquo;enseigner dans le secondaire et cela m&rsquo;a permis de bien
+                    approfondir les bases.
                 </p>
+            </li>
+            <li>
+                <p class="language">
+                    <dfn><abbr title="Structured Query Language">SQL</abbr> Structured Query Language</dfn>
+                </p>
+                <progress max="100" value="70" class="star_bar"></progress>
                 <p>
-                    J&rsquo;ai toujours &eacute;t&eacute; &agrave; l’&eacute;coute des autres. Par cons&eacute;quent, j&rsquo;ai la facult&eacute; de pouvoir prendre l&rsquo;information et&nbsp;/&nbsp;ou le probl&egrave;me et d&rsquo;y r&eacute;pondre correctement. J&rsquo;ai toujours &eacute;t&eacute; attentif à ce qu&rsquo;on me dit donc chez moi c&rsquo;est plut&ocirc;t inn&eacute;.
+                    Je poss&egrave;de les bases en <abbr title="Structured Query Language">SQL</abbr> et je peux donc me
+                    d&eacute;brouiller avec ce langage.
                 </p>
+            </li>
+            <li>
+                <p class="language">
+                    <dfn>Typescript</dfn> Langage de programmation open source
+                </p>
+                <progress max="100" value="88" class="star_bar"></progress>
                 <p>
-                    Je suis aussi quelqu&rsquo;un de tr&egrave;s ponctuel. Toujours &agrave; l&rsquo;heure est ma devise&nbsp;! Je d&eacute;teste &ecirc;tre en retard quelque part.
+                    Typescript &eacute;tant un d&eacute;riv&eacute; de Javascript, j&rsquo;ai eu l&rsquo;occasion de
+                    beaucoup travailler avec ce langage notamment dans le cadre de cr&eacute;ation de jeu mobile.
                 </p>
-            </article>
-            <div>
+            </li>
+            <li>
                 <p>
-                    <img src="/icons/SVG/" alt="Point interrogation entouré">
-                    &Ecirc;tes&nbsp;-&nbsp;vous convaincu de mon profile&nbsp;?
-                    <a href="#">Remplissez le formulaire</a>
+                    <dfn><abbr title="Hypertext Preprocessor">Php</abbr> Hypertext Preprocessor</dfn>
                 </p>
-            </div>
-        </section>
-        <section>
-            <h2>
-                Mes projets
-            </h2>
-            <p>
-                J&rsquo;ai commenc&eacute; &agrave; faire des projets en BAC 2 de mon cursus. Je n&rsquo;en avais jamais fait avant. J&rsquo;ai donc commenc&eacute; avec le projet du site de SEF HUY. En parall&egrave;le nous avions notre portfolio &agrave; faire et cela repr&eacute;sentait un grand d&eacute;fi technique pour moi. Apr&egrave;s ça, en BAC 3, derni&grave;re ann&eacute;e &agrave; la haute &eacute;cole, j&rsquo;ai du r&eacute;aliser mon PFE durant cette ann&eacute;e l&agrave;. J&rsquo;ai d&eacute;cid&eacute; de faire le site d&rsquo;une artisane li&eacute;geoise qui n&rsquo;est autre que L&rsquo;Atelier de capucine.
-            </p>
-            <p>
-                Ensuite j&rsquo;ai eu l&rsquo;occasion de faire plusieurs projet d&rsquo;ampleur diff&eacute;rente dans les entreprises o&ugrave; j&rsquo;ai pr&eacute;c&eacute;demment travaill&eacute;.
+                <progress max="100" value="85" class="star_bar"></progress>
+                <p>
+                    J&rsquo;ai travaill&eacute; en tant que backend d&eacute;velopper pendant un certain temps et j&rsquo;ai
+                    pu am&eacute;liorer mes comp&eacute;tences dans ce domaine.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <dfn>Python</dfn> Language interpret&eacute;
+                </p>
+                <progress max="100" value="83"></progress>
+                <p>
 
-            </p>
-            <p>
-                Et aujourd&rsquo;hui, je r&eacute;alise aussi bien des projets personnel (dans le monde du priv&eacute;) que des projet de clients en entreprise.
-            </p>
-            <div>
-                <p>
-                    Int&eacute;ress&eacute; par un projet perso?
                 </p>
-                <a href="#" title="">
-                    Remplissez le formulaire
-                </a>
-            </div>
-        </section>
-        <section class="gris">
-            <h2>
-                Quelques visuels de mes projets
-            </h2>
-            <p>
-                Retrouvez ici 4 quelques visuels projets sur lesquels j&rsquo;ai travaill&eacute; durant ma carri&egrave;re.
-            </p>
-            <img src="" alt="screenshot du PFE montrant un design de site coloré.">
-            <img src="" alt="screenshot montrant une partie du design du projet SEF Huy">
-            <img src="" alt="screenshot montrant le design de soundtrekker ">
-            <img src="" alt="screenshot montrant le portefolio">
-            <a href="" title="Découvrez mon portfolio">D&eacute;couvrez mon portfolio</a>
-            <a href="#contact" title="Allez au formulaire">Contactez&nbsp;-&nbsp;moi</a>
-        </section>
-        <section class="blanc">
-            <h2>Langues</h2>
-            <p>
-                Je parle anglais (niveau B2 certifié) et je poss&egrave;de les bases de n&eacute;erlandais.
-            </p>
-            <h2>Permis</h2>
-            <p>
-                Je poss&egrave;de le permis B et envisage de passer le permis moto.
-            </p>
-            <h2>Hobbies</h2>
-            <p>
-                J&rsquo;aime les voitures et les motos, je joue aux jeux vid&eacute;o et je lis des webtoons.
-            </p>
-        </section>
-        <section class="gris">
-            <h2>Me contacter par mail ou t&eacute;l&eacute;phone</h2>
-            <p>
-                N&rsquo;h&eacute;sitez pas&nbsp;!
-            </p>
-            <a href="#footer">Mes r&eacute;seaux</a>
-            <a href="#contact">Contactez&nbsp;-&nbsp;moi</a>
-            <img src="/img/" alt="photo de Benjamin Marissiaux">
-            <div>
-                <img src="/icons/SVG/" alt="icon de téléphone">
-                <p>
-                    04&nbsp;74&nbsp;40&nbsp;51&nbsp;22
+            </li>
+            <li>
+                <p class="language">
+                    <dfn>Ruby</dfn>
                 </p>
+                <progress max="100" value="74"></progress>
                 <p>
-                    Appelez-moi pour parler de notre futur entretien !
+                    J&rsquo;ai pu utilis&eacute; se langage &agrave; plusieurs reprise durant mes jobs pr&eacute;c&eacute;dents.
+                    Il est aussi bien utilisable en frontend qu&rsquo;en backend.
                 </p>
-                <img src="/icons/SVG/" alt="icon de mail">
-                <p>
-                    ben.marissiaux@gmail.com
-                </p>
-                <p>
-                    Envoyez&nbsp;-&nbsp;moi un mail pour parler de notre futur entretient
-                </p>
-            </div>
-        </section>
-    </main>
-    <footer id="footer" class="gris">
-        <section>
-            <h2>&Agrave; propos de moi</h2>
+            </li>
+        </ul>
+    </section>
+    <section>
+        <h2>Me contacter</h2>
+        <p>
+            Remplissez le formulaire pour me contacter.
+        </p>
+        <form id="contact" action="#" method="get">
+            <input type="text" placeholder="Nom, Pr&eacute;nom" required id="name" class="input_form">
+            <label for="name"></label>
+            <input type="tel" placeholder="T&eacute;l&eacute;phone" required id="phone" class="input_form">
+            <label for="phone"></label>
+            <input type="email" placeholder="e&nbsp;-&nbsp;mail" required id="email" class="input_form">
+            <label for="email"></label>
+            <textarea maxlength="500"
+                      placeholder="&Eacute;crivez votre id&eacute;e de projet ou des questions me concernant…" rows="5"
+                      cols="30" required id="desc"></textarea>
+            <label for="desc"></label>
+            <input type="checkbox" name="conscent_therms" id="conscent_therms" class="input_form">
+            <label for="conscent_therms">Je certifie avoir pris connaissance et accepter les <span
+                    class="highlighted_green">conditions relatives &agrave; la Vie Priv&eacute;e.</span></label>
+            <input type="submit">
+        </form>
+    </section>
+    <section id="about_me">
+        <img src="/img" alt="Une photo de Benjamin Marissiaux" itemprop="image">
+        <h2>Apprenez&nbsp;-&nbsp;en plus sur moi et mes soft skills&nbsp;!</h2>
+        <article>
+            <h3 class="hidden">Soft Skill</h3>
             <p>
-                blabla
+                Je poss&egrave;de plusieurs softs skills que j&rsquo;ai acquis dans diff&eacute;rent domaine comme le
+                sport, la lecture, les jeux vid&eacute;os ou m&ecirc;me dans mes environnements de travail pr&eacute;c&eacute;dents.
             </p>
-            <a href="#">client</a>
-        </section>
-        <section>
-            <h2>Mes r&eacute;seaux</h2>
-            <ul>
-                <li>Instagram&nbsp;: ben.m.0_o</li>
-                <li>Facebook&nbsp;: Benjamin Marissiaux</li>
-                <li>Github&nbsp;: marissiaux_benjamin</li>
-                <li>Messenger&nbsp;: Benjamin Marissiaux</li>
-                <li>Linkedin&nbsp;: Ben1</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Autres web designer que j&rsquo;aime bien</h2>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </section>
-    </footer>
-    </body>
+            <p>
+                Je suis quelqu&rsquo;un de tr&egrave;s patient avec les autres ou m&ecirc;me en g&eacute;n&eacute;ral.
+                Je peux aussi bien attendre qu&rsquo;on me donne des informations mais aussi patient pour expliquer&nbsp;/&nbsp;enseigner
+                des choses &agrave; des personnes. J&rsquo;ai acquis ma patience gr&acirc;ce &agrave; mon métier d&rsquo;eseignant.
+            </p>
+            <p>
+                Au del&agrave; de ma patience, je suis quelqu&rsquo;un qui s&rsquo;adapte assez vite aux nouvelles
+                situations auxquelles je suis confront&eacute;. Par exemple, je mr&rsquo;adapte vite &agrave; mon
+                adversaire au tennis de table. J&rsquo;ai donc appris &agrave; m&rsquo;adapter gr&acirc;ce &agrave; ce
+                sport.
+            </p>
+            <p>
+                Je poss&egrave;de aussi un esprit d&rsquo;&eacute;quipe. Je suis quelqu&rsquo;un qui performe beaucoup
+                mieux dans une &eacute;quipe que tout seul. Mon esprit d&rsquo;&eacute;quipe est donc assez bien d&eacute;velopp&eacute;.
+                J&rsquo;ai pu l&rsquo;acqu&eacute;rir gr&acirc;ce aux jeux vidéo notamment mais aussi gr&acirc;ce
+                &agrave; d&rsquo;autre activit&eacute;s personnelle comme le tennis de table.
+            </p>
+            <p>
+                J&rsquo;ai toujours &eacute;t&eacute; &agrave; l’&eacute;coute des autres. Par cons&eacute;quent, j&rsquo;ai
+                la facult&eacute; de pouvoir prendre l&rsquo;information et&nbsp;/&nbsp;ou le probl&egrave;me et d&rsquo;y
+                r&eacute;pondre correctement. J&rsquo;ai toujours &eacute;t&eacute; attentif à ce qu&rsquo;on me dit
+                donc chez moi c&rsquo;est plut&ocirc;t inn&eacute;.
+            </p>
+            <p>
+                Je suis aussi quelqu&rsquo;un de tr&egrave;s ponctuel. Toujours &agrave; l&rsquo;heure est ma devise&nbsp;!
+                Je d&eacute;teste &ecirc;tre en retard quelque part.
+            </p>
+        </article>
+        <div>
+            <p>
+                <img src="/icons/SVG/" alt="Point interrogation entouré" itemprop="image">
+                &Ecirc;tes&nbsp;-&nbsp;vous convaincu de mon profile&nbsp;?
+                <a href="#">Remplissez le formulaire</a>
+            </p>
+        </div>
+    </section>
+    <section id="mes_projets">
+        <h2>
+            Mes projets
+        </h2>
+        <p>
+            J&rsquo;ai commenc&eacute; &agrave; faire des projets en BAC 2 de mon cursus. Je n&rsquo;en avais jamais
+            fait avant. J&rsquo;ai donc commenc&eacute; avec le projet du site de SEF HUY. En parall&egrave;le nous
+            avions notre portfolio &agrave; faire et cela repr&eacute;sentait un grand d&eacute;fi technique pour moi.
+            Apr&egrave;s ça, en BAC 3, derni&grave;re ann&eacute;e &agrave; la haute &eacute;cole, j&rsquo;ai du r&eacute;aliser
+            mon PFE durant cette ann&eacute;e l&agrave;. J&rsquo;ai d&eacute;cid&eacute; de faire le site d&rsquo;une
+            artisane li&eacute;geoise qui n&rsquo;est autre que L&rsquo;Atelier de capucine.
+        </p>
+        <p>
+            Ensuite j&rsquo;ai eu l&rsquo;occasion de faire plusieurs projets d&rsquo;ampleur diff&eacute;rente dans les
+            entreprises o&ugrave; j&rsquo;ai pr&eacute;c&eacute;demment travaill&eacute;.
+
+        </p>
+        <p>
+            Et aujourd&rsquo;hui, je r&eacute;alise aussi bien des projets personnels (dans le monde du priv&eacute;)
+            que
+            des projet de clients en entreprise.
+        </p>
+        <div>
+            <p>
+                Int&eacute;ress&eacute; par un projet perso?
+            </p>
+            <a href="#contact" title="allez au formulaire">
+                Remplissez le formulaire
+            </a>
+        </div>
+    </section>
+    <section class="gris" id="projets">
+        <h2>
+            Quelques visuels de mes projets
+        </h2>
+        <p>
+            Retrouvez ici 4 quelques visuels projets sur lesquels j&rsquo;ai travaill&eacute; durant ma carri&egrave;re.
+        </p>
+        <img src="" alt="screenshot du PFE montrant un design de site coloré." itemprop="image">
+        <img src="" alt="screenshot montrant une partie du design du projet SEF Huy" itemprop="image">
+        <img src="" alt="screenshot montrant le design de soundtrekker " itemprop="image">
+        <img src="" alt="screenshot montrant le portefolio" itemprop="image">
+        <a href="" title="Découvrez mon portfolio" itemprop="image">D&eacute;couvrez mon portfolio</a>
+        <a href="#contact" title="Allez au formulaire" itemprop="image">Contactez&nbsp;-&nbsp;moi</a>
+    </section>
+    <section class="blanc">
+        <p>Langues</p>
+        <p>
+            Je parle anglais (niveau B2 certifié) et je poss&egrave;de les bases de n&eacute;erlandais.
+        </p>
+        <p>Permis</p>
+        <p>
+            Je poss&egrave;de le permis B et envisage de passer le permis moto.
+        </p>
+        <p>Hobbies</p>
+        <p>
+            J&rsquo;aime les voitures et les motos, je joue aux jeux vid&eacute;o, je pratique du tennis de table (<span
+                itemprop="affilitaiton">&Eacute;toile Donceel</span>) et je lis des webtoons.
+        </p>
+    </section>
+    <section class="gris">
+        <h2>Me contacter par mail ou t&eacute;l&eacute;phone</h2>
+        <p>
+            N&rsquo;h&eacute;sitez pas&nbsp;!
+        </p>
+        <a href="#footer">Mes r&eacute;seaux</a>
+        <a href="#contact">Contactez&nbsp;-&nbsp;moi</a>
+        <img src="/img/" alt="photo de Benjamin Marissiaux" itemprop="image">
+        <div>
+            <img src="/icons/SVG/" alt="icon de téléphone" itemprop="image">
+            <p>
+                04&nbsp;74&nbsp;40&nbsp;51&nbsp;22
+            </p>
+            <p>
+                Appelez-moi pour parler de notre futur entretien !
+            </p>
+            <img src="/icons/SVG/" alt="icon de mail" itemprop="image">
+            <p>
+                ben.marissiaux@gmail.com
+            </p>
+            <p>
+                Envoyez&nbsp;-&nbsp;moi un mail pour parler de notre futur entretient
+            </p>
+        </div>
+    </section>
+</main>
+<footer id="footer" class="g_section">
+    <section>
+        <h2>&Agrave; propos de moi</h2>
+        <p>
+            blabla
+        </p>
+        <a href="#">client</a>
+    </section>
+    <section>
+        <h2>Mes r&eacute;seaux</h2>
+        <ul>
+            <li>Instagram&nbsp;: ben.m.0_o</li>
+            <li>Facebook&nbsp;: Benjamin <span itemprop="familyName">Marissiaux</span></li>
+            <li>Github&nbsp;: marissiaux_benjamin</li>
+            <li>Messenger&nbsp;: Benjamin <span itemprop="familyName">Marissiaux</span></li>
+            <li>Linkedin&nbsp;: Ben1</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Autres web designer que j&rsquo;aime bien</h2>
+        <ul>
+            <li><a href="https://www.alsacreations.com/"
+                   title="Aller sur le site d'Alsacreation">Alsacr&eacute;ation</a></li>
+            <li><a href="https://shorturl.at/hpGPZ" title="Aller sur le site de Fiverr">Fiverr</a></li>
+            <li><a href="https://dribbble.com/" title="Aller sur le site de Dribbble">Dribbble</a></li>
+            <li>
+                <a href="https://webflow.com/?utm_source=google&utm_medium=search&utm_campaign=SS-GoogleSearch-Brand-Tier3&utm_term=kwd-11668981_webflow_e_649953696920__&gad_source=1&gclid=Cj0KCQiA5rGuBhCnARIsAN11vgTE6U3toY_KNumtIJyD1gVOFsVY2BjUy4jfz7jUs-o0hNtfQm8TM0caArW8EALw_wcB"
+                   title="Aller qur le site de Webflow">Webflow</a></li>
+        </ul>
+    </section>
+    <a href="#start" title="Revenez en haut de la page">
+        <svg height="40" width="40" class="up_btn">
+            <rect height="40"
+                  width="40"
+                  fill="#57BF91"
+                  class="square_up"
+            />
+            <polyline
+                    fill="none"
+                    stroke="white"
+                    stroke-width="2"
+                    points="10,25 20,15 30,25"
+                    class="arrow_up"
+            />
+
+        </svg>
+    </a>
+</footer>
+</body>
 </html>
