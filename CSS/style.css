@@ -5,3 +5,6 @@
 .color_section {
     background: linear-gradient(45deg, #EBEBEB, #FFDEDE);
 }
+body{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
