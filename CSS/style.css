@@ -44,13 +44,14 @@ a {
     color: black;
     margin-right: 1em;
     font-size: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 #intro {
     background-color: #003871;
     color: white;
     padding: 10em 17em;
-    background-image: url("");
 }
 
 #main_title {
