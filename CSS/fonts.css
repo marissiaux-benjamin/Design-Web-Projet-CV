@@ -1,4 +1,5 @@
 @font-face {
-    font-family: "Helvetica Neue";
-    src: url("../fonts/lato/Lato-Bold.ttf");
+    font-family: 'Lato-Bold';
+    src: url("../fonts/lato/Lato-Bold.ttf") format("truetype");
+    font-weight: 300;
 }

@@ -1,3 +1,7 @@
+.hidden {
+    display: none;
+}
+
 .g_section {
     background-color: #FAFAFA;
 }
@@ -5,15 +9,76 @@
 .color_section {
     background: linear-gradient(45deg, #EBEBEB, #FFDEDE);
 }
-body{
-    font-family: Lato-Bold;
+
+body {
+    height: 100vh;
+    font-family: sans-serif;
+    margin: 0 auto;
 }
-.phone_btn{
-    padding: 1em;
-    display: inline-block;
+
+.phone_btn, .btn_rempli, .btn_contour {
     border-radius: 2em;
+    padding: 1em 2em;
+    font-size: 0.8334em;
+    text-transform: uppercase;
+
+}
+
+.phone_btn {
+    display: inline-block;
     background-color: #57BF91;
 }
-a{
+
+a {
     text-decoration: none;
 }
+
+.list_nav_principale {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 1.5em;
+}
+
+.list_nav_principale a {
+    color: black;
+    margin-right: 1em;
+    font-size: 1em;
+}
+
+#intro {
+    background-color: #003871;
+    color: white;
+    padding: 10em 17em;
+    background-image: url("");
+}
+
+#main_title {
+    font-size: 3.6em;
+    margin-bottom: .46em;
+}
+
+#presentation{
+    font-size: 1.45em;
+    margin-bottom: 1.5em;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.btn_rempli {
+    background-color: #222222;
+    color: white;
+}
+
+.btn_contour {
+    border: solid 2px #222222;
+    color: #222222;
+}
+
+.special {
+    color: white;
+}
+
+
