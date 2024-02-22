@@ -42,13 +42,14 @@ header {
     font-size: .6875em;
 }
 .phone_btn .phone_number{
-    background-image: url("../icons/SVG/tel.svg");
-    background-repeat: no-repeat;
+    display: inline-block;
     color: white;
     margin-right: 0;
     font-weight: lighter;
+    background-image: url("../icons/SVG/tel.svg");
+    background-repeat: no-repeat;
+    background-position: left;
 }
-
 
 #main_title {
     font-size: 3.6em;
