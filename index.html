@@ -14,7 +14,7 @@
 <body>
 <h1 class="hidden" id="start">Benjamin- <span itemprop="familyName">Marissiaux</span>-CV</h1>
 <header>
-    <nav class="nav_Principale">
+    <nav id="nav_Principale">
         <h2 class="hidden">Navigation Principale</h2>
         <ul class="list_nav_principale">
             <li><a href="#xp">Mes exp&eacute;riences</a></li>
@@ -23,16 +23,15 @@
             <li><a href="#about_me">Autres skills</a></li>
             <li><a href="#projets">Mes projets</a></li>
             <li><a href="#mail_tel">Mails et T&eacute;l&eacute;phone</a></li>
-            <li class="phone_btn"><a href="#"><img src="/img" alt="icon téléphone" itemprop="image"><span itemprop="telephone">0474&nbsp;40&nbsp;51&nbsp;22</span></a>
-            </li>
+            <li class="phone_btn"><a href="#" class="phone_number">0474&nbsp;40&nbsp;51&nbsp;22</a></li>
         </ul>
     </nav>
 </header>
 <main>
     <section id="intro">
-        <h2 id="main_title">Un Designer Web <br>
+        <h1 id="main_title">Un Designer Web <br>
             <span class="bold">Proche de ses clients</span>
-        </h2>
+        </h1>
         <p id="presentation">
             D&eacute;velopeur frontend en <span itemprop="workLocation">Wallonie</span>&nbsp;-&nbsp;<span
                 itemprop="homeLocation">Li&egrave;ge, 342 Fexhe-le-Haut-Clocher.</span>
@@ -41,17 +40,17 @@
         <a href="#" id="" class="btn_contour special">Mes tarifs</a>
 
     </section>
-    <section id="xp">
-        <h2>Mes exp&eacute;riences professionnelles</h2>
-        <p>Voici la liste de mes exp&eacute;riences professionnelles ant&eacute;rieures</p>
-        <ul>
-            <li>
+    <section id="xp" class="sections">
+        <h2 class="titre_section">Mes exp&eacute;riences professionnelles</h2>
+        <p id="sous_titre">Voici la liste de mes exp&eacute;riences professionnelles ant&eacute;rieures</p>
+        <ul id="liste_xp">
+            <li class="job" id="first_job">
                 <section>
+                    <img src="/img/SVG/logo_gaming1.svg" alt="logo de Gaming1" height="80" width="80" itemprop="image">
                     <h3>
                         Web Designer Gaming 1
                     </h3>
 
-                    <img src="/img/SVG/logo_gaming1.svg" alt="logo de Gaming1" height="80" width="80" itemprop="image">
                     <p>
                         Il y a 1 an, je travaillais dans la soci&eacute;t&eacute; de jeux en ligne Gaming 1. Je m&rsquo;occupais
                         du c&ocirc;t&eacute; design d&rsquo;interface o&uacute; je confectionnais
@@ -60,160 +59,182 @@
                     </p>
                 </section>
             </li>
-            <li>
+            <li class="job" id="second_job">
                 <section>
+                    <img src="/img/SVG/logo_nonantcinq.svg" alt="logo de de l'agence nonante cinque" height="80"
+                         width="80" itemprop="image">
                     <h3>
                         Web designer Nonante cinq
                     </h3>
-                    <img src="/img/SVG/logo_nonantcinq.svg" alt="logo de de l'agence nonante cinque" itemprop="image">
                     <p>
-                        Nonante cinq est une agence web qui travaill&eacute; sur de nombreux projets dont j&rsquo;ai fait partie car j&rsquo;y ai travaill&eacute; 4 ans.
-                        Avec une &eacute;quipe, nous avons r&eacute;alis&eacute; un design en collaboration avec Tui ou encore Proximus Picks ++.
+                        Nonante cinq est une agence web qui travaill&eacute; sur de nombreux projets dont j&rsquo;ai
+                        fait partie car j&rsquo;y ai travaill&eacute; 4 ans.
+                        Avec une &eacute;quipe, nous avons r&eacute;alis&eacute; un design en collaboration avec Tui ou
+                        encore Proximus Picks ++.
                     </p>
                 </section>
             </li>
-            <li>
+            <li class="job" id="third_job">
                 <section>
+                    <img src="/icons/SVG/profile.svg" alt="icon de progile couleur verte" height="80" width="80"
+                         itemprop="image">
                     <h3>
                         Enseignant
                     </h3>
-                    <img src="/icons/SVG/profile.svg" alt="icon de progile couleur verte" itemprop="image">
                     <p>
-                        J&rsquo;ai enseign&eacute; l&rsquo;informatique dans l&rsquo;enseignement secondaire durant 3 ans. Cela m&rsquo;a permis de devenir structur&eacute; dans mes leçons
+                        J&rsquo;ai enseign&eacute; l&rsquo;informatique dans l&rsquo;enseignement secondaire durant 3
+                        ans. Cela m&rsquo;a permis de devenir structur&eacute; dans mes leçons
                         ainsi que d&rsquo;&ecirc;tre plus clair dans mes explications et mon approche de probl&egrave;mes.
                     </p>
                 </section>
             </li>
-            <li>
+            <li class="job" id="fourth_job">
                 <section>
+                    <img src="/img/SVG/logo_LM_studio.svg" alt="logo de LM" height="80" width="80" itemprop="image">
                     <h3>
                         Web Designer LM Studio
                     </h3>
-                    <img src="/img/SVG/logo_LM_studio.svg" alt="logo de LM" itemprop="image">
                     <p>
-                        J&rsquo;ai travaill&eacute; pour cette agence pendant 2 ans. &Eacute;tant une start up, j&rsquo;ai du jou&eacute; plusieurs
-                        r&ocirc;les au sein de l&rsquo;entreprise. J&rsquo;ai du m&rsquo;occuper aussi bien de front&nbsp;-&nbsp;end que de back&nbsp;-&nbsp;end mais
-                        aussi Community manager ou encore rédacteur web. &Aacute; l&nbsp;aide d&nbsp;une &eacute;quipe soud&eacute;e, j&rsquo;ai pu travailler sur
+                        J&rsquo;ai travaill&eacute; pour cette agence pendant 2 ans. &Eacute;tant une start up, j&rsquo;ai
+                        du jou&eacute; plusieurs
+                        r&ocirc;les au sein de l&rsquo;entreprise. J&rsquo;ai du m&rsquo;occuper aussi bien de front&nbsp;-&nbsp;end
+                        que de back&nbsp;-&nbsp;end mais
+                        aussi Community manager ou encore rédacteur web. &Aacute; l&nbsp;aide d&nbsp;une &eacute;quipe
+                        soud&eacute;e, j&rsquo;ai pu travailler sur
                         diff&eacute;rents projets comme «&nbsp;Green to Friendly&nbsp;».
                     </p>
                 </section>
             </li>
-            <li>
+            <li class="job" id="last_job">
                 <section>
+                    <img src="/img/SVG/logo_odoo.svg" alt="logo Odoo" height="80" width="80" itemprop="image">
                     <h3>
                         Web designer Odoo
                     </h3>
-                    <img src="/img/SVG/logo_odoo.svg" alt="logo Odoo" itemprop="image">
                     <p>
-                        Au d&eacute;but de ma carri&egrave;re, j&rsquo;ai &eacute;t&eacute; embauch&eacute; par l&rsquo;agence Odoo. Ils recherchaient des jeunes qu&rsquo;ils pouvaient former en interne.
-                        J&rsquo;y ai travaill&eacute; pendant 3 ans avant de changer d&rsquo;agence. J&rsquo;ai notamment collabor&eacute; sur &laquo;Party Pime&raquo; et &laquo;Blue Beat&raquo;.
+                        Au d&eacute;but de ma carri&egrave;re, j&rsquo;ai &eacute;t&eacute; embauch&eacute; par l&rsquo;agence
+                        Odoo. Ils recherchaient des jeunes qu&rsquo;ils pouvaient former en interne.
+                        J&rsquo;y ai travaill&eacute; pendant 3 ans avant de changer d&rsquo;agence. J&rsquo;ai
+                        notamment collabor&eacute; sur &laquo;Party Pime&raquo; et &laquo;Blue Beat&raquo;.
                         Cela m&rsquo;a permis de construire des bases solides pour la suite de ma carri&egrave;re.
                     </p>
                 </section>
             </li>
+            <li id="plus_xp">
+                <div id="div_xp">
+                    <p class="p_xp">
+                        Plus d&rsquo;exp&eacute;riences&nbsp;?
+                    </p><br>
+                    <a href="#" class="btn_rempli lien_xp">Plus d’exp&eacute;riences</a>
+                </div>
+            </li>
+            <li id="aside_rencontre">
+                <aside>
+                    <h3 id="me_rencontre">Vous souhaitez me rencontrer&nbsp;?</h3>
+                    <p id="prendre_rdv">Contactez&nbsp;-&nbsp;moi pour un projet ou une entre&nbsp;-&nbsp;vue</p>
+                    <a href="#contact" class="btn_rempli"> Remplissez mon formulaire</a>
+                </aside>
+            </li>
         </ul>
-        <div>
-            Voulez&nbsp;-&nbsp;vous voir mes autres exp&eacute;riences indirecte avec le web&nbsp;?
-            <a href="#" class="btn_rempli">Plus d’exp&eacute;riences</a>
-        </div>
-        <img src="/img" alt="Photo de Benjamin Marissiaux pointant vers plus d'expérience." itemprop="image">
-        <aside>
-            <h3>Vous souhaitez me rencontrer&nbsp;?</h3>
-            <p>Contactez&nbsp;-&nbsp;moi pour un projet ou une entre&nbsp;-&nbsp;vue</p>
-            <a href="#contact" class="btn_rempli"> Remplissez mon formulaire</a>
-        </aside>
     </section>
-    <section id="languages" class="g_section">
-        <h2>Ma&icirc;trise de langages</h2>
-        <a href="#">Voir mes comp&eacute;ences en liste</a>
-        <progress max="100" value="76"></progress>
-        <p>3,8 sur 5 de moyenne</p>
-        <ul>
-            <li>
+    <section id="languages" class="g_section sections">
+        <h2 class="titre_section maitrise">Ma&icirc;trise de langages</h2>
+        <a href="#" class="liens_verts">Voir mes comp&eacute;ences en liste</a><br>
+        <progress max="100" value="76" id="grande star_bar"></progress>
+        <p class="moyenne"><span class="bold">3,8 sur 5</span> de moyenne</p>
+        <ul id="liste_maitrise">
+            <li id="java">
                 <p class="language">
-                    <dfn>Javascript</dfn> Langage de programmation orient&eacute; objet.
+                    <dfn>Javascript</dfn> <br>
+                    <span class="description_lg">Langage de programmation orient&eacute; objet.</span>
                 </p>
                 <progress max="100" value="86" class="star_bar"></progress>
-                <p>
+                <p class="mes_comp">
                     Je poss&egrave;de des comp&eacute;tences assez d&eacute;velopp&eacute;es en javascript. Ayant
                     beaucoup travaill&eacute; dans le frontend, j&rsquo;ai acquis pas mal de savoir faire en
                     <abbr title="Javascript">JS</abbr>.
                 </p>
             </li>
-            <li>
+            <li id="css">
                 <p class="language">
-                    <dfn><abbr title="Cascading style sheet">CSS</abbr> Cascading Style Sheet</dfn>
+                    <dfn><abbr title="Cascading style sheet">CSS</abbr></dfn><br>
+                    <span class="description_lg">Cascading Style Sheet</span>
                 </p>
                 <progress max="100" value="98" class="star_bar"></progress>
-                <p>
+                <p class="mes_comp">
                     Mes comp&eacute;tences en <abbr title="Cascading Style Sheet">CSS</abbr> est mon point le plus
                     fort, ce langage me passionne et n&rsquo;a plus de secret pour moi.
                 </p>
             </li>
-            <li>
+            <li id="html">
                 <p class="language">
-                    <dfn><abbr title="hypertext markup language">html</abbr>Hypertext Markup Language</dfn>
+                    <dfn><abbr title="hypertext markup language">html</abbr></dfn><br>
+                    <span class="description_lg">Hypertext Markup Language</span>
                 </p>
                 <progress max="100" value="95" class="star_bar"></progress>
-                <p>
+                <p class="mes_comp">
                     <abbr title="Hypertext Markup Language">HTML</abbr> est le deuxi&egrave; langage que je ma&icirc;trise
                     le mieux. J&rsquo;ai pu l&rsquo;enseigner dans le secondaire et cela m&rsquo;a permis de bien
                     approfondir les bases.
                 </p>
             </li>
-            <li>
+            <li id="sql">
                 <p class="language">
-                    <dfn><abbr title="Structured Query Language">SQL</abbr> Structured Query Language</dfn>
+                    <dfn><abbr title="Structured Query Language">SQL</abbr></dfn><br>
+                    <span class="description_lg">Structured Query Language</span>
                 </p>
                 <progress max="100" value="70" class="star_bar"></progress>
-                <p>
+                <p class="mes_comp">
                     Je poss&egrave;de les bases en <abbr title="Structured Query Language">SQL</abbr> et je peux donc me
                     d&eacute;brouiller avec ce langage.
                 </p>
             </li>
-            <li>
+            <li id="ts">
                 <p class="language">
-                    <dfn>Typescript</dfn> Langage de programmation open source
+                    <dfn>Typescript</dfn><br>
+                    <span class="description_lg">Langage de programmation open source</span>
                 </p>
                 <progress max="100" value="88" class="star_bar"></progress>
-                <p>
+                <p class="mes_comp">
                     Typescript &eacute;tant un d&eacute;riv&eacute; de Javascript, j&rsquo;ai eu l&rsquo;occasion de
                     beaucoup travailler avec ce langage notamment dans le cadre de cr&eacute;ation de jeu mobile.
                 </p>
             </li>
-            <li>
+            <li id="php">
                 <p>
-                    <dfn><abbr title="Hypertext Preprocessor">Php</abbr> Hypertext Preprocessor</dfn>
+                    <dfn><abbr title="Hypertext Preprocessor">Php</abbr></dfn><br>
+                    <span class="description_lg">Hypertext Preprocessor</span>
                 </p>
                 <progress max="100" value="85" class="star_bar"></progress>
-                <p>
+                <p class="mes_comp">
                     J&rsquo;ai travaill&eacute; en tant que backend d&eacute;velopper pendant un certain temps et j&rsquo;ai
                     pu am&eacute;liorer mes comp&eacute;tences dans ce domaine.
                 </p>
             </li>
-            <li>
+            <li id="python">
                 <p>
-                    <dfn>Python</dfn> Language interpret&eacute;
+                    <dfn>Python</dfn><br>
+                    <span class="description_lg">Language interpret&eacute;</span>
                 </p>
                 <progress max="100" value="83"></progress>
-                <p>
+                <p class="mes_comp">
 
                 </p>
             </li>
-            <li>
+            <li id="rub">
                 <p class="language">
                     <dfn>Ruby</dfn>
                 </p>
                 <progress max="100" value="74"></progress>
-                <p>
+                <p class="mes_comp">
                     J&rsquo;ai pu utilis&eacute; se langage &agrave; plusieurs reprise durant mes jobs pr&eacute;c&eacute;dents.
                     Il est aussi bien utilisable en frontend qu&rsquo;en backend.
                 </p>
             </li>
         </ul>
     </section>
-    <section>
-        <h2>Me contacter</h2>
+    <section class="sections">
+        <h2 class="titre_section">Me contacter</h2>
         <p>
             Remplissez le formulaire pour me contacter.
         </p>
@@ -234,9 +255,9 @@
             <input type="submit">
         </form>
     </section>
-    <section id="about_me" class="color_section">
+    <section id="about_me" class="color_section sections">
         <img src="/img" alt="Une photo de Benjamin Marissiaux" itemprop="image">
-        <h2>Apprenez&nbsp;-&nbsp;en plus sur moi et mes soft skills&nbsp;!</h2>
+        <h2 class="titre_section">Apprenez&nbsp;-&nbsp;en plus sur moi et mes soft skills&nbsp;!</h2>
         <article>
             <h3 class="hidden">Soft Skill</h3>
             <p>
@@ -279,8 +300,8 @@
             </p>
         </div>
     </section>
-    <section id="mes_projets">
-        <h2>
+    <section id="mes_projets" class="sections">
+        <h2 class="titre_section">
             Mes projets
         </h2>
         <p>
@@ -311,7 +332,7 @@
         </div>
     </section>
     <section class="gris" id="projets">
-        <h2>
+        <h2 class="titre_section">
             Quelques visuels de mes projets
         </h2>
         <p>
@@ -321,8 +342,10 @@
         <img src="" alt="screenshot montrant une partie du design du projet SEF Huy" itemprop="image">
         <img src="" alt="screenshot montrant le design de soundtrekker " itemprop="image">
         <img src="" alt="screenshot montrant le portefolio" itemprop="image">
-        <a href="" title="Découvrez mon portfolio" itemprop="image" class="btn_rempli">D&eacute;couvrez mon portfolio</a>
-        <a href="#contact" title="Allez au formulaire" itemprop="image" class="btn_contour">Contactez&nbsp;-&nbsp;moi</a>
+        <a href="" title="Découvrez mon portfolio" itemprop="image" class="btn_rempli">D&eacute;couvrez mon
+            portfolio</a>
+        <a href="#contact" title="Allez au formulaire" itemprop="image"
+           class="btn_contour">Contactez&nbsp;-&nbsp;moi</a>
     </section>
     <section class="blanc">
         <p>Langues</p>
@@ -340,7 +363,7 @@
         </p>
     </section>
     <section class="color_section">
-        <h2 id="mail_tel">Me contacter par mail ou t&eacute;l&eacute;phone</h2>
+        <h2 id="mail_tel" class="titre_section">Me contacter par mail ou t&eacute;l&eacute;phone</h2>
         <p>
             N&rsquo;h&eacute;sitez pas&nbsp;!
         </p>

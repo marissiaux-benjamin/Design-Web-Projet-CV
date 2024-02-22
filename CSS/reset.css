@@ -41,3 +41,29 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+
+/* fonts */
+
+@font-face {
+    font-family: 'Lato-Bold';
+    src: url("../fonts/lato/Lato-Bold.ttf") format("TrueType");
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

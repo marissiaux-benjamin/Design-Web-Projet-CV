@@ -6,7 +6,7 @@
     background-color: #FAFAFA;
 }
 
-.color_section {
+.color_section, #div_xp {
     background: linear-gradient(45deg, #EBEBEB, #FFDEDE);
 }
 
@@ -16,50 +16,47 @@ body {
     margin: 0 auto;
 }
 
-.phone_btn, .btn_rempli, .btn_contour {
-    border-radius: 2em;
-    padding: 1em 2em;
-    font-size: 0.8334em;
-    text-transform: uppercase;
+header {
+    position: fixed;
+    display: inline-block;
+    width: 100%;
+    background-color: white;
+}
 
+#nav_Principale {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn_rempli, .btn_contour {
+    border-radius: 2em;
+    padding: 1.125em 2.1875em;
+    font-size: .9375em;
+    text-transform: uppercase;
 }
 
 .phone_btn {
-    display: inline-block;
-    background-color: #57BF91;
+    border-radius: 2em;
+    background-color: rgba(4,194,141,1);
+    padding: 1.0909em 1.5625em;
+    font-size: .6875em;
 }
-
-a {
-    text-decoration: none;
-}
-
-.list_nav_principale {
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    padding: 1.5em;
-}
-
-.list_nav_principale a {
-    color: black;
-    margin-right: 1em;
-    font-size: 1em;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-#intro {
-    background-color: #003871;
+.phone_btn .phone_number{
+    background-image: url("../icons/SVG/tel.svg");
+    background-repeat: no-repeat;
     color: white;
-    padding: 10em 17em;
+    margin-right: 0;
+    font-weight: lighter;
 }
+
 
 #main_title {
     font-size: 3.6em;
     margin-bottom: .46em;
 }
 
-#presentation{
+#presentation {
+    font-family: Lato-Bold, sans-serif;
     font-size: 1.45em;
     margin-bottom: 1.5em;
 }
@@ -81,5 +78,227 @@ a {
 .special {
     color: white;
 }
+
+.titre_section {
+    font-size: 2.5em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.sections {
+    padding-top: 8em;
+}
+
+#sous_titre {
+    text-align: center;
+    margin-bottom: 10em;
+    line-height: 2em;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 2.2em;
+    margin-bottom: .7em;
+}
+
+#me_rencontre {
+    margin-bottom: .1em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.list_nav_principale, #liste_xp {
+    display: flex;
+}
+
+.list_nav_principale {
+    justify-content: right;
+    align-items: center;
+    padding: 1.5em;
+}
+
+.list_nav_principale a {
+    color: black;
+    margin-right: 1em;
+    font-size: 1.125em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#intro {
+    background-color: #003871;
+    color: white;
+    padding: 10em 17em;
+}
+
+#liste_xp {
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-bottom: 4em;
+    display: grid;
+    grid-template-areas:
+            ". first second third ."
+            ". fourth last xp_sup ."
+            ". rencontre rencontre rencontre .";
+    grid-auto-columns: 1fr 2fr 2fr 2fr 1fr;
+    column-gap: 6em;
+    row-gap: 2.7778em;
+}
+
+#java, #css, #html, #sql, #ts, #php, #pyth, #rub, #first_job, #second_job, #third_job, #fourth_job, #last_job {
+    text-align: center;
+}
+
+#first_job {
+    grid-area: first;
+}
+
+#second_job {
+    grid-area: second;
+}
+
+#third_job {
+    grid-area: third;
+}
+
+#fourth_job {
+    grid-area: fourth;
+}
+
+#last_job {
+    grid-area: last;
+}
+
+#plus_xp {
+    grid-area: xp_sup;
+    text-align: center;
+}
+
+#div_xp, aside {
+    border: solid .3em white;
+    border-radius: 1.5em;
+}
+
+#div_xp {
+    padding: 2em 3em 4em 3em;
+}
+
+.p_xp {
+    font-size: 2.525em;
+    font-weight: bold;
+    line-height: 45px;
+    margin-bottom: .5em;
+}
+
+#aside_rencontre {
+    grid-area: rencontre;
+    text-align: center;
+}
+
+aside {
+    background-color: #EBEBEB;
+    padding: 3em;
+}
+
+#prendre_rdv {
+    margin-bottom: 2em;
+}
+
+#languages {
+    text-align: center;
+}
+
+.liens_verts {
+    color: #57BF91;
+    font-size: 1.38em;
+    font-weight: lighter;
+}
+
+.moyenne {
+    display: inline;
+    line-height: 3em;
+    font-size: 1.65em;
+}
+
+#liste_maitrise {
+    margin-top: 2em;
+    padding: 0 20em 5em;
+    display: grid;
+    column-gap: 4em;
+    row-gap: 4em;
+    grid-template-areas:
+            "js css html sql"
+            "ts php pyth rub";
+    grid-auto-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
+}
+
+dfn {
+    font-size: 1.375em;
+    font-weight: bold;
+    line-height: 1.2em;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+.star_bar {
+    margin-top: .4em;
+    margin-bottom: 1.5em;
+}
+
+.description_lg {
+    font-size: .8em;
+}
+
+.mes_comp {
+    font-size: 1.0625em;
+    font-weight: lighter;
+    line-height: 1.3em;
+}
+
+#java {
+    grid-area: js;
+}
+
+#css {
+    grid-area: css;
+}
+
+#html {
+    grid-area: html;
+}
+
+#sql {
+    grid-area: sql;
+}
+
+#ts {
+    grid-area: ts;
+}
+
+#php {
+    grid-area: php;
+}
+
+#pyth {
+    grid-area: pyth;
+}
+
+#rub {
+    grid-area: rub;
+}
+
+
+
+
+
+
+
+
+
+
 
 
