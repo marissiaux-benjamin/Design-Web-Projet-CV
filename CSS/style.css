@@ -46,9 +46,6 @@ header {
     color: white;
     margin-right: 0;
     font-weight: lighter;
-    background-image: url("../icons/SVG/tel.svg");
-    background-repeat: no-repeat;
-    background-position: left;
 }
 
 #main_title {
@@ -57,7 +54,6 @@ header {
 }
 
 #presentation {
-    font-family: Lato-Bold, sans-serif;
     font-size: 1.45em;
     margin-bottom: 1.5em;
 }
@@ -131,7 +127,7 @@ a {
 #intro {
     background-color: #003871;
     color: white;
-    padding: 10em 17em;
+    padding: 16.6em 17em;
 }
 
 #liste_xp {
