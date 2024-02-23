@@ -16,6 +16,12 @@ body {
     margin: 0 auto;
 }
 
+#up_btn {
+    position: fixed;
+    bottom: 2em;
+    right: 1em;
+}
+
 header {
     position: fixed;
     display: inline-block;
@@ -31,17 +37,18 @@ header {
 .btn_rempli, .btn_contour {
     border-radius: 2em;
     padding: 1.125em 2.1875em;
-    font-size: .9375em;
+    font-size: .8125em;
     text-transform: uppercase;
 }
 
 .phone_btn {
     border-radius: 2em;
-    background-color: rgba(4,194,141,1);
+    background-color: rgba(4, 194, 141, 1);
     padding: 1.0909em 1.5625em;
     font-size: .6875em;
 }
-.phone_btn .phone_number{
+
+.phone_btn .phone_number {
     display: inline-block;
     color: white;
     margin-right: 0;
@@ -84,6 +91,7 @@ header {
 
 .sections {
     padding-top: 8em;
+    text-align: center;
 }
 
 #sous_titre {
@@ -130,6 +138,10 @@ a {
     padding: 16.6em 17em;
 }
 
+#mp_btn {
+    margin-right: 1.3333em;
+}
+
 #liste_xp {
     padding-left: 4em;
     padding-right: 4em;
@@ -173,12 +185,13 @@ a {
     text-align: center;
 }
 
-#div_xp, aside {
+#div_xp, aside, #div_projet {
     border: solid .3em white;
     border-radius: 1.5em;
+    box-shadow: 0 0 2em lightgrey, 0 0 2em lightgrey;
 }
 
-#div_xp {
+#div_xp, #div_projet {
     padding: 2em 3em 4em 3em;
 }
 
@@ -209,6 +222,9 @@ aside {
 
 .liens_verts {
     color: #57BF91;
+}
+
+.lien-maitrise {
     font-size: 1.38em;
     font-weight: lighter;
 }
@@ -228,32 +244,7 @@ aside {
     grid-template-areas:
             "js css html sql"
             "ts php pyth rub";
-    grid-auto-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
-}
-
-dfn {
-    font-size: 1.375em;
-    font-weight: bold;
-    line-height: 1.2em;
-}
-
-abbr {
-    text-decoration: none;
-}
-
-.star_bar {
-    margin-top: .4em;
-    margin-bottom: 1.5em;
-}
-
-.description_lg {
-    font-size: .8em;
-}
-
-.mes_comp {
-    font-size: 1.0625em;
-    font-weight: lighter;
-    line-height: 1.3em;
+    grid-auto-columns: 2fr 2fr 2fr 2fr;
 }
 
 #java {
@@ -287,6 +278,124 @@ abbr {
 #rub {
     grid-area: rub;
 }
+
+dfn {
+    font-size: 1.375em;
+    font-weight: bold;
+    line-height: 1.2em;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+.star_bar {
+    margin-top: .4em;
+    margin-bottom: 1.5em;
+}
+
+.description_lg {
+    font-size: .8em;
+}
+
+.mes_comp {
+    font-size: 1.0625em;
+    font-weight: lighter;
+    line-height: 1.3em;
+}
+
+#phrase_contact {
+    font-size: 1.625em;
+    font-weight: lighter;
+    margin-bottom: 1.5em;
+}
+
+#contact {
+    display: flex;
+    padding: 0 30em;
+    flex-direction: column;
+}
+
+.input_form {
+    color: black;
+    font-family: sans-serif;
+    font-size: 1em;
+    border: 3px solid black;
+    border-radius: 1.5em;
+    padding-left: 1em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    margin-bottom: .3125em;
+}
+
+#desc {
+    padding-top: 1em;
+    margin-bottom: 2em;
+    margin-top: 1.2em;
+}
+
+.input_form::placeholder {
+    opacity: 100%;
+}
+
+.input_form:focus {
+    border-color: rgba(4, 194, 141, 1);
+    outline: none;
+}
+
+#check {
+    text-align: left;
+    margin-left: 1.0625em;
+    margin-bottom: 1.5em;
+}
+
+#consent_therms {
+    font-size: 1.0625em;
+}
+
+
+#envoyer_form {
+    text-transform: uppercase;
+    font-size: .8em;
+    width: 20em;
+    color: white;
+    background-color: #707787;
+    padding: 1.125em;
+    border: none;
+    border-radius: 2em;
+    margin-bottom: 3em;
+}
+
+#titre_soft_skills {
+    margin-bottom: 1.5em;
+}
+
+article {
+    text-align: left;
+    margin: 0 15em;
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 3em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

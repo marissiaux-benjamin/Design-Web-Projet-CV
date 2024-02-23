@@ -37,7 +37,7 @@
                 itemprop="homeLocation">Li&egrave;ge, 342 Fexhe-le-Haut-Clocher.</span>
         </p>
         <a href="#" id="mp_btn" class="btn_rempli">Mon Portfolio</a>
-        <a href="#" id="" class="btn_contour special">Mes tarifs</a>
+        <a href="#" class="btn_contour special">Mes tarifs</a>
 
     </section>
     <section id="xp" class="sections">
@@ -139,7 +139,7 @@
     </section>
     <section id="languages" class="g_section sections">
         <h2 class="titre_section maitrise">Ma&icirc;trise de langages</h2>
-        <a href="#" class="liens_verts">Voir mes comp&eacute;ences en liste</a><br>
+        <a href="#" class="liens_verts lien-maitrise">Voir mes comp&eacute;ences en liste</a><br>
         <progress max="100" value="76" id="grande star_bar"></progress>
         <p class="moyenne"><span class="bold">3,8 sur 5</span> de moyenne</p>
         <ul id="liste_maitrise">
@@ -233,9 +233,9 @@
             </li>
         </ul>
     </section>
-    <section class="sections">
+    <section class="sections" id="section_contact">
         <h2 class="titre_section">Me contacter</h2>
-        <p>
+        <p id="phrase_contact">
             Remplissez le formulaire pour me contacter.
         </p>
         <form id="contact" action="#" method="get">
@@ -246,59 +246,69 @@
             <input type="email" placeholder="e&nbsp;-&nbsp;mail" required id="email" class="input_form">
             <label for="email"></label>
             <textarea maxlength="500"
-                      placeholder="&Eacute;crivez votre id&eacute;e de projet ou des questions me concernant…" rows="5"
-                      cols="30" required id="desc"></textarea>
+                      placeholder="&Eacute;crivez votre id&eacute;e de projet ou des questions me concernant…" rows="10"
+                      cols="40" required id="desc" class="input_form"></textarea>
             <label for="desc"></label>
-            <input type="checkbox" name="conscent_therms" id="conscent_therms" class="input_form">
-            <label for="conscent_therms">Je certifie avoir pris connaissance et accepter les <span
-                    class="highlighted_green">conditions relatives &agrave; la Vie Priv&eacute;e.</span></label>
-            <input type="submit">
+            <div id="check">
+                <input type="checkbox" id="ct" name="conscent_therms" class="input_form">
+                <label for="ct" id="consent_therms">Je certifie avoir pris connaissance et accepter les <span
+                        class="liens_verts">conditions relatives &agrave; la Vie Priv&eacute;e.</span></label>
+            </div>
+            <input type="submit" id="envoyer_form" value="Envoyez votre demande">
         </form>
     </section>
     <section id="about_me" class="color_section sections">
         <img src="/img" alt="Une photo de Benjamin Marissiaux" itemprop="image">
-        <h2 class="titre_section">Apprenez&nbsp;-&nbsp;en plus sur moi et mes soft skills&nbsp;!</h2>
+        <h2 class="titre_section" id="titre_soft_skills">Apprenez&nbsp;-&nbsp;en plus sur moi et mes soft
+            skills&nbsp;!</h2>
         <article>
             <h3 class="hidden">Soft Skill</h3>
-            <p>
-                Je poss&egrave;de plusieurs softs skills que j&rsquo;ai acquis dans diff&eacute;rent domaine comme le
-                sport, la lecture, les jeux vid&eacute;os ou m&ecirc;me dans mes environnements de travail pr&eacute;c&eacute;dents.
-            </p>
-            <p>
-                Je suis quelqu&rsquo;un de tr&egrave;s patient avec les autres ou m&ecirc;me en g&eacute;n&eacute;ral.
-                Je peux aussi bien attendre qu&rsquo;on me donne des informations mais aussi patient pour expliquer&nbsp;/&nbsp;enseigner
-                des choses &agrave; des personnes. J&rsquo;ai acquis ma patience gr&acirc;ce &agrave; mon métier d&rsquo;eseignant.
-            </p>
-            <p>
-                Au del&agrave; de ma patience, je suis quelqu&rsquo;un qui s&rsquo;adapte assez vite aux nouvelles
-                situations auxquelles je suis confront&eacute;. Par exemple, je mr&rsquo;adapte vite &agrave; mon
-                adversaire au tennis de table. J&rsquo;ai donc appris &agrave; m&rsquo;adapter gr&acirc;ce &agrave; ce
-                sport.
-            </p>
-            <p>
-                Je poss&egrave;de aussi un esprit d&rsquo;&eacute;quipe. Je suis quelqu&rsquo;un qui performe beaucoup
-                mieux dans une &eacute;quipe que tout seul. Mon esprit d&rsquo;&eacute;quipe est donc assez bien d&eacute;velopp&eacute;.
-                J&rsquo;ai pu l&rsquo;acqu&eacute;rir gr&acirc;ce aux jeux vidéo notamment mais aussi gr&acirc;ce
-                &agrave; d&rsquo;autre activit&eacute;s personnelle comme le tennis de table.
-            </p>
-            <p>
-                J&rsquo;ai toujours &eacute;t&eacute; &agrave; l’&eacute;coute des autres. Par cons&eacute;quent, j&rsquo;ai
-                la facult&eacute; de pouvoir prendre l&rsquo;information et&nbsp;/&nbsp;ou le probl&egrave;me et d&rsquo;y
-                r&eacute;pondre correctement. J&rsquo;ai toujours &eacute;t&eacute; attentif à ce qu&rsquo;on me dit
-                donc chez moi c&rsquo;est plut&ocirc;t inn&eacute;.
-            </p>
-            <p>
-                Je suis aussi quelqu&rsquo;un de tr&egrave;s ponctuel. Toujours &agrave; l&rsquo;heure est ma devise&nbsp;!
-                Je d&eacute;teste &ecirc;tre en retard quelque part.
-            </p>
+            <div>
+                <p id="p1">
+                    Je poss&egrave;de plusieurs softs skills que j&rsquo;ai acquis dans diff&eacute;rent domaine comme
+                    le
+                    sport, la lecture, les jeux vid&eacute;os ou m&ecirc;me dans mes environnements de travail pr&eacute;c&eacute;dents.
+                </p>
+                <p id="p2">
+                    Je suis quelqu&rsquo;un de tr&egrave;s patient avec les autres ou m&ecirc;me en g&eacute;n&eacute;ral.
+                    Je peux aussi bien attendre qu&rsquo;on me donne des informations mais aussi patient pour expliquer&nbsp;/&nbsp;enseigner
+                    des choses &agrave; des personnes. J&rsquo;ai acquis ma patience gr&acirc;ce &agrave; mon métier d&rsquo;eseignant.
+                </p>
+                <p id="p3">
+                    Au del&agrave; de ma patience, je suis quelqu&rsquo;un qui s&rsquo;adapte assez vite aux nouvelles
+                    situations auxquelles je suis confront&eacute;. Par exemple, je mr&rsquo;adapte vite &agrave; mon
+                    adversaire au tennis de table. J&rsquo;ai donc appris &agrave; m&rsquo;adapter gr&acirc;ce &agrave;
+                    ce
+                    sport.
+                </p>
+            </div>
+            <div>
+                <p id="p4">
+                    Je poss&egrave;de aussi un esprit d&rsquo;&eacute;quipe. Je suis quelqu&rsquo;un qui performe
+                    beaucoup
+                    mieux dans une &eacute;quipe que tout seul. Mon esprit d&rsquo;&eacute;quipe est donc assez bien d&eacute;velopp&eacute;.
+                    J&rsquo;ai pu l&rsquo;acqu&eacute;rir gr&acirc;ce aux jeux vidéo notamment mais aussi gr&acirc;ce
+                    &agrave; d&rsquo;autre activit&eacute;s personnelle comme le tennis de table.
+                </p>
+                <p id="p5">
+                    J&rsquo;ai toujours &eacute;t&eacute; &agrave; l’&eacute;coute des autres. Par cons&eacute;quent, j&rsquo;ai
+                    la facult&eacute; de pouvoir prendre l&rsquo;information et&nbsp;/&nbsp;ou le probl&egrave;me et d&rsquo;y
+                    r&eacute;pondre correctement. J&rsquo;ai toujours &eacute;t&eacute; attentif à ce qu&rsquo;on me dit
+                    donc chez moi c&rsquo;est plut&ocirc;t inn&eacute;.
+                </p>
+                <p id="p6">
+                    Je suis aussi quelqu&rsquo;un de tr&egrave;s ponctuel. Toujours &agrave; l&rsquo;heure est ma devise&nbsp;!
+                    Je d&eacute;teste &ecirc;tre en retard quelque part.
+                </p>
+            </div>
+            <div id="div_projet">
+                <p>
+                    <img src="/icons/SVG/" alt="Point interrogation entouré" itemprop="image"><br>
+                    <span class="bold ">&Ecirc;tes&nbsp;-&nbsp;vous convaincu de mon profile&nbsp;?</span><br>
+                    <a href="#section_contact" class="btn_rempli convaincu">Remplissez&nbsp;le&nbsp;formulaire</a>
+                </p>
+            </div>
         </article>
-        <div>
-            <p>
-                <img src="/icons/SVG/" alt="Point interrogation entouré" itemprop="image">
-                &Ecirc;tes&nbsp;-&nbsp;vous convaincu de mon profile&nbsp;?
-                <a href="#" class="btn_rempli">Remplissez le formulaire</a>
-            </p>
-        </div>
     </section>
     <section id="mes_projets" class="sections">
         <h2 class="titre_section">
@@ -418,8 +428,8 @@
                    title="Aller qur le site de Webflow">Webflow</a></li>
         </ul>
     </section>
-    <a href="#start" title="Revenez en haut de la page">
-        <svg height="40" width="40" class="up_btn">
+    <a href="#intro" title="Revenez en haut de la page">
+        <svg height="40" width="40" id="up_btn">
             <rect height="40"
                   width="40"
                   fill="#57BF91"
