@@ -1,5 +1,5 @@
-.hidden {
-    display: none;
+.non_visible {
+    text-indent: -1000000px;
 }
 
 .g_section {
@@ -24,6 +24,7 @@ body {
 
 header {
     position: fixed;
+    top: 0;
     display: inline-block;
     width: 100%;
     background-color: white;
@@ -185,7 +186,7 @@ a {
     text-align: center;
 }
 
-#div_xp, aside, #div_projet {
+#div_xp, aside, #div_projet, #div_interest {
     border: solid .3em white;
     border-radius: 1.5em;
     box-shadow: 0 0 2em lightgrey, 0 0 2em lightgrey;
@@ -202,12 +203,12 @@ a {
     margin-bottom: .5em;
 }
 
-#aside_rencontre {
+.a_part {
     grid-area: rencontre;
     text-align: center;
 }
 
-aside {
+.rectangle_gris {
     background-color: #EBEBEB;
     padding: 3em;
 }
@@ -373,9 +374,36 @@ abbr {
 article {
     text-align: left;
     margin: 0 15em;
+    padding-bottom: 4em;
     display: flex;
     justify-content: space-evenly;
     column-gap: 3em;
+}
+
+#mes_projets {
+
+}
+
+.projets {
+    margin-bottom: 1.1em;
+}
+
+#text_projet {
+    text-align: left;
+    max-width: 20em;
+    margin-left: 18em;
+}
+
+#div_interest {
+    display: inline-block;
+    line-height: 2em;
+    max-width: 20em;
+}
+
+#interested {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 1.1em;
 }
 
 

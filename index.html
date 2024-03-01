@@ -12,10 +12,10 @@
     <title>Benjamin-Marissiaux-CV</title>
 </head>
 <body>
-<h1 class="hidden" id="start">Benjamin- <span itemprop="familyName">Marissiaux</span>-CV</h1>
+<h1 class="non_visible" id="start">Benjamin- <span itemprop="familyName">Marissiaux</span>-CV</h1>
 <header>
     <nav id="nav_Principale">
-        <h2 class="hidden">Navigation Principale</h2>
+        <h2 class="non_visible">Navigation Principale</h2>
         <ul class="list_nav_principale">
             <li><a href="#xp">Mes exp&eacute;riences</a></li>
             <li><a href="#languages">Ma&icirc;trise de langages</a></li>
@@ -128,8 +128,8 @@
                     <a href="#" class="btn_rempli lien_xp">Plus d’exp&eacute;riences</a>
                 </div>
             </li>
-            <li id="aside_rencontre">
-                <aside>
+            <li class="a_part">
+                <aside class="rectangle_gris">
                     <h3 id="me_rencontre">Vous souhaitez me rencontrer&nbsp;?</h3>
                     <p id="prendre_rdv">Contactez&nbsp;-&nbsp;moi pour un projet ou une entre&nbsp;-&nbsp;vue</p>
                     <a href="#contact" class="btn_rempli"> Remplissez mon formulaire</a>
@@ -262,7 +262,7 @@
         <h2 class="titre_section" id="titre_soft_skills">Apprenez&nbsp;-&nbsp;en plus sur moi et mes soft
             skills&nbsp;!</h2>
         <article>
-            <h3 class="hidden">Soft Skill</h3>
+            <h3 class="non_visible">Soft Skill</h3>
             <div>
                 <p id="p1">
                     Je poss&egrave;de plusieurs softs skills que j&rsquo;ai acquis dans diff&eacute;rent domaine comme
@@ -311,29 +311,31 @@
         </article>
     </section>
     <section id="mes_projets" class="sections">
-        <h2 class="titre_section">
+        <h2 class="titre_section projets">
             Mes projets
         </h2>
-        <p>
-            J&rsquo;ai commenc&eacute; &agrave; faire des projets en BAC 2 de mon cursus. Je n&rsquo;en avais jamais
-            fait avant. J&rsquo;ai donc commenc&eacute; avec le projet du site de SEF HUY. En parall&egrave;le nous
-            avions notre portfolio &agrave; faire et cela repr&eacute;sentait un grand d&eacute;fi technique pour moi.
-            Apr&egrave;s ça, en BAC 3, derni&grave;re ann&eacute;e &agrave; la haute &eacute;cole, j&rsquo;ai du r&eacute;aliser
-            mon PFE durant cette ann&eacute;e l&agrave;. J&rsquo;ai d&eacute;cid&eacute; de faire le site d&rsquo;une
-            artisane li&eacute;geoise qui n&rsquo;est autre que L&rsquo;Atelier de capucine.
-        </p>
-        <p>
-            Ensuite j&rsquo;ai eu l&rsquo;occasion de faire plusieurs projets d&rsquo;ampleur diff&eacute;rente dans les
-            entreprises o&ugrave; j&rsquo;ai pr&eacute;c&eacute;demment travaill&eacute;.
-
-        </p>
-        <p>
-            Et aujourd&rsquo;hui, je r&eacute;alise aussi bien des projets personnels (dans le monde du priv&eacute;)
-            que
-            des projets de clients en entreprise.
-        </p>
-        <div>
+        <div id="text_projet">
             <p>
+                J&rsquo;ai commenc&eacute; &agrave; faire des projets en BAC 2 de mon cursus. Je n&rsquo;en avais jamais
+                fait avant. J&rsquo;ai donc commenc&eacute; avec le projet du site de SEF HUY. En parall&egrave;le nous
+                avions notre portfolio &agrave; faire et cela repr&eacute;sentait un grand d&eacute;fi technique pour moi.
+                Apr&egrave;s ça, en BAC 3, derni&grave;re ann&eacute;e &agrave; la haute &eacute;cole, j&rsquo;ai du r&eacute;aliser
+                mon PFE durant cette ann&eacute;e l&agrave;. J&rsquo;ai d&eacute;cid&eacute; de faire le site d&rsquo;une
+                artisane li&eacute;geoise qui n&rsquo;est autre que L&rsquo;Atelier de capucine.
+            </p>
+            <p>
+                Ensuite j&rsquo;ai eu l&rsquo;occasion de faire plusieurs projets d&rsquo;ampleur diff&eacute;rente dans les
+                entreprises o&ugrave; j&rsquo;ai pr&eacute;c&eacute;demment travaill&eacute;.
+
+            </p>
+            <p>
+                Et aujourd&rsquo;hui, je r&eacute;alise aussi bien des projets personnels (dans le monde du priv&eacute;)
+                que
+                des projets de clients en entreprise.
+            </p>
+        </div>
+        <div id="div_interest" class="rectangle_gris">
+            <p id="interested">
                 Int&eacute;ress&eacute; par un projet perso?
             </p>
             <a href="#contact" title="allez au formulaire" class="btn_rempli">
@@ -341,7 +343,7 @@
             </a>
         </div>
     </section>
-    <section class="gris" id="projets">
+    <section class="g_section" id="projets">
         <h2 class="titre_section">
             Quelques visuels de mes projets
         </h2>
@@ -358,6 +360,9 @@
            class="btn_contour">Contactez&nbsp;-&nbsp;moi</a>
     </section>
     <section class="blanc">
+        <h2 class="non_visible">
+            Langue, permis et hobbies
+        </h2>
         <p>Langues</p>
         <p>
             Je parle anglais (niveau B2 certifié) et je poss&egrave;de les bases de n&eacute;erlandais.
