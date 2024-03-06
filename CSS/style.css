@@ -92,6 +92,7 @@ header {
 
 .sections {
     padding-top: 8em;
+    padding-bottom: 6em;
     text-align: center;
 }
 
@@ -377,27 +378,34 @@ article {
     padding-bottom: 4em;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     column-gap: 3em;
 }
 
-#mes_projets {
+#convaincu a {
+    line-height: 8em;
+}
 
+#projets_info {
+    display: flex;
+    column-gap: 3em;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5em;
 }
 
 .projets {
     margin-bottom: 1.1em;
 }
 
-#text_projet {
+.text_projet {
     text-align: left;
     max-width: 20em;
-    margin-left: 18em;
 }
 
 #div_interest {
-    display: inline-block;
     line-height: 2em;
-    max-width: 20em;
+    max-width: 15em;
 }
 
 #interested {
@@ -406,6 +414,45 @@ article {
     margin-bottom: 1.1em;
 }
 
+#div_projet {
+    text-align: center;
+    min-width: 15em;
+}
+
+#div_projet span {
+    font-size: 2em;
+}
+
+.interrogation {
+    margin-bottom: 1.5em;
+}
+
+#projets img{
+    display: block;
+    margin-bottom: 4em;
+}
+
+#projets p{
+    font-size: 1.375em;
+    margin-bottom: 2em;
+}
+#info_supp{
+    display:flex;
+    padding: 4em;
+    column-gap: 2em;
+    justify-content: space-around;
+}
+
+.info_supp_titres{
+    font-weight: bold;
+    font-size: 1.625em;
+    line-height: 1.5em;
+}
+
+.info_supp_p{
+    font-size:1.0625em;
+    line-height: 1.5em;
+}
 
 
 
