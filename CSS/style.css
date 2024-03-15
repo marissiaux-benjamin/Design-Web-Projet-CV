@@ -49,8 +49,18 @@ header {
 .phone_btn {
     border-radius: 2em;
     background-color: rgba(4, 194, 141, 1);
-    padding: 1.0909em 1.5625em;
+    padding: 1.0909em 1.5625em 1.0909em 4em;
     font-size: .6875em;
+    transition: ease-in-out .5s;
+    transform: translateY(3px);
+    background-image: url("../icons/tel.svg");
+    background-repeat: no-repeat;
+    background-position: 20px 11px;
+}
+.phone_btn:hover{
+    background-color: black;
+    color: white;
+    transform: translateY(-3px);
 }
 
 .phone_btn .phone_number {
@@ -510,13 +520,7 @@ footer {
     color: white;
 }
 
-.phone_btn:hover{
-    background-color: black;
-    color: white;
-    transition:
-            background-color,
-            1s;
-}
+
 
 
 
