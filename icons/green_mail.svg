@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.57 47.57">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #3bb288;
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: .5px;
+      }
+    </style>
+  </defs>
+  <g id="green_mail">
+    <g>
+      <circle class="cls-1" cx="23.79" cy="23.79" r="23.79"/>
+      <rect class="cls-2" x="13.98" y="19.7" width="16.36" height="9.95"/>
+      <path class="cls-2" d="m13.98,19.7l7.71,4.39c.29.17.65.17.94,0l7.71-4.39"/>
+      <polyline class="cls-2" points="16.59 19.7 16.59 16.9 33.37 16.9 33.37 26.74 30.35 26.74"/>
+    </g>
+  </g>
+</svg>
