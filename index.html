@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="/CSS/style.css">
     <title>Benjamin-Marissiaux-CV</title>
 </head>
-<body>
-<h1 class="non_visible" id="start">Benjamin- <span itemprop="familyName">Marissiaux</span>-CV</h1>
+<body itemscope itemtype="https://schema.org/Person">
+<h1 class="non_visible" id="start"><span itemprop="name">Benjamin</span>&nbsp;-&nbsp;<span itemprop="familyName">Marissiaux</span>-<abbr title="curriculum vitae">CV</abbr></h1>
 <header>
     <nav id="nav_Principale">
         <h2 class="non_visible">Navigation Principale</h2>
@@ -28,7 +28,7 @@
     </nav>
 </header>
 <main>
-    <section id="intro">
+    <section id="intro" itemscope itemtype="https://schema.org/Person">
         <h1 id="main_title">Un Designer Web <br>
             <span class="bold">Proche de ses clients</span>
         </h1>
@@ -45,10 +45,10 @@
         <p id="sous_titre">Voici la liste de mes exp&eacute;riences professionnelles ant&eacute;rieures</p>
         <ul id="liste_xp">
             <li class="job" id="first_job">
-                <section>
+                <section itemscope itemtype="https://schema.org/Person">
                     <img src="/img/SVG/logo_gaming1.svg" alt="logo de Gaming1" height="80" width="80" itemprop="image">
                     <h3>
-                        Web Designer Gaming 1
+                        Web Designer <span itemprop="worksFor">Gaming 1</span>
                     </h3>
 
                     <p>
@@ -60,11 +60,11 @@
                 </section>
             </li>
             <li class="job" id="second_job">
-                <section>
+                <section itemscope itemtype="https://schema.org/Person">
                     <img src="/img/SVG/logo_nonantcinq.svg" alt="logo de de l'agence nonante cinque" height="80"
                          width="80" itemprop="image">
                     <h3>
-                        Web designer Nonante cinq
+                        Web designer <span itemprop="worksFor">Nonante cinq</span>
                     </h3>
                     <p>
                         Nonante cinq est une agence web qui travaill&eacute; sur de nombreux projets dont j&rsquo;ai
@@ -78,10 +78,10 @@
                 <section>
                     <img src="/icons/profile.svg" alt="icon de progile couleur verte" height="80" width="80"
                          itemprop="image">
-                    <h3>
+                    <h3 itemprop="jobTitle">
                         Enseignant
                     </h3>
-                    <p>
+                    <p itemprop="description">
                         J&rsquo;ai enseign&eacute; l&rsquo;informatique dans l&rsquo;enseignement secondaire durant 3
                         ans. Cela m&rsquo;a permis de devenir structur&eacute; dans mes leçons
                         ainsi que d&rsquo;&ecirc;tre plus clair dans mes explications et mon approche de probl&egrave;mes.
@@ -91,10 +91,10 @@
             <li class="job" id="fourth_job">
                 <section>
                     <img src="/img/SVG/logo_LM_studio.svg" alt="logo de LM" height="80" width="80" itemprop="image">
-                    <h3>
+                    <h3 itemprop="jobTitle">
                         Web Designer LM Studio
                     </h3>
-                    <p>
+                    <p itemprop="description">
                         J&rsquo;ai travaill&eacute; pour cette agence pendant 2 ans. &Eacute;tant une start up, j&rsquo;ai
                         du jou&eacute; plusieurs
                         r&ocirc;les au sein de l&rsquo;entreprise. J&rsquo;ai du m&rsquo;occuper aussi bien de front&nbsp;-&nbsp;end
@@ -108,10 +108,10 @@
             <li class="job" id="last_job">
                 <section>
                     <img src="/img/SVG/logo_odoo.svg" alt="logo Odoo" height="80" width="80" itemprop="image">
-                    <h3>
+                    <h3 itemprop="jobTitle">
                         Web designer Odoo
                     </h3>
-                    <p>
+                    <p itemprop="description">
                         Au d&eacute;but de ma carri&egrave;re, j&rsquo;ai &eacute;t&eacute; embauch&eacute; par l&rsquo;agence
                         Odoo. Ils recherchaient des jeunes qu&rsquo;ils pouvaient former en interne.
                         J&rsquo;y ai travaill&eacute; pendant 3 ans avant de changer d&rsquo;agence. J&rsquo;ai
@@ -139,28 +139,28 @@
             </li>
         </ul>
     </section>
-    <section id="languages" class="g_section sections">
+    <section id="languages" class="g_section sections" itemscope itemtype="http://schema.org/ItemList">
         <h2 class="titre_section maitrise">Ma&icirc;trise de langages</h2>
         <a href="#" class="liens_verts lien-maitrise">Voir mes comp&eacute;ences en liste</a><br>
         <progress max="100" value="76" id="grande star_bar"></progress>
         <p class="moyenne"><span class="bold">3,8 sur 5</span> de moyenne</p>
         <ul id="liste_maitrise">
-            <li id="java">
+            <li id="java" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                 <p class="language">
-                    <dfn>Javascript</dfn> <br>
-                    <span class="description_lg">Langage de programmation orient&eacute; objet.</span>
+                    <dfn itemprop="name">Javascript</dfn> <br>
+                    <span class="description_lg" itemprop="description">Langage de programmation orient&eacute; objet.</span>
                 </p>
                 <progress max="100" value="86" class="star_bar"></progress>
-                <p class="mes_comp">
+                <p class="mes_comp" >
                     Je poss&egrave;de des comp&eacute;tences assez d&eacute;velopp&eacute;es en javascript. Ayant
                     beaucoup travaill&eacute; dans le frontend, j&rsquo;ai acquis pas mal de savoir faire en
                     <abbr title="Javascript">JS</abbr>.
                 </p>
             </li>
-            <li id="css">
+            <li id="css" itemscope itemtype="http://schema.org/ListItem">
                 <p class="language">
-                    <dfn><abbr title="Cascading style sheet">CSS</abbr></dfn><br>
-                    <span class="description_lg">Cascading Style Sheet</span>
+                    <dfn><abbr title="Cascading style sheet" itemprop="name">CSS</abbr></dfn><br>
+                    <span class="description_lg" itemprop="description">Cascading Style Sheet</span>
                 </p>
                 <progress max="100" value="98" class="star_bar"></progress>
                 <p class="mes_comp">
@@ -168,10 +168,10 @@
                     fort, ce langage me passionne et n&rsquo;a plus de secret pour moi.
                 </p>
             </li>
-            <li id="html">
+            <li id="html" itemscope itemtype="http://schema.org/Person">
                 <p class="language">
-                    <dfn><abbr title="hypertext markup language">html</abbr></dfn><br>
-                    <span class="description_lg">Hypertext Markup Language</span>
+                    <dfn><abbr title="hypertext markup language" itemprop="name">html</abbr></dfn><br>
+                    <span class="description_lg" itemprop="description">Hypertext Markup Language</span>
                 </p>
                 <progress max="100" value="95" class="star_bar"></progress>
                 <p class="mes_comp">
@@ -180,10 +180,10 @@
                     approfondir les bases.
                 </p>
             </li>
-            <li id="sql">
+            <li id="sql" itemscope itemtype="http://schema.org/ListItem">
                 <p class="language">
-                    <dfn><abbr title="Structured Query Language">SQL</abbr></dfn><br>
-                    <span class="description_lg">Structured Query Language</span>
+                    <dfn><abbr title="Structured Query Language" itemprop="name">SQL</abbr></dfn><br>
+                    <span class="description_lg" itemprop="description">Structured Query Language</span>
                 </p>
                 <progress max="100" value="70" class="star_bar"></progress>
                 <p class="mes_comp">
@@ -191,10 +191,10 @@
                     d&eacute;brouiller avec ce langage.
                 </p>
             </li>
-            <li id="ts">
+            <li id="ts" itemscope itemtype="http://schema.org/ListItem">
                 <p class="language">
-                    <dfn>Typescript</dfn><br>
-                    <span class="description_lg">Langage de programmation open source</span>
+                    <dfn itemprop="name">Typescript</dfn><br>
+                    <span class="description_lg" itemprop="description">Langage de programmation open source</span>
                 </p>
                 <progress max="100" value="88" class="star_bar"></progress>
                 <p class="mes_comp">
@@ -202,10 +202,10 @@
                     beaucoup travailler avec ce langage notamment dans le cadre de cr&eacute;ation de jeu mobile.
                 </p>
             </li>
-            <li id="php">
+            <li id="php" itemscope itemtype="http://schema.org/ListItem">
                 <p>
-                    <dfn><abbr title="Hypertext Preprocessor">Php</abbr></dfn><br>
-                    <span class="description_lg">Hypertext Preprocessor</span>
+                    <dfn><abbr title="Hypertext Preprocessor" itemprop="name">Php</abbr></dfn><br>
+                    <span class="description_lg" itemprop="description">Hypertext Preprocessor</span>
                 </p>
                 <progress max="100" value="85" class="star_bar"></progress>
                 <p class="mes_comp">
@@ -213,19 +213,19 @@
                     pu am&eacute;liorer mes comp&eacute;tences dans ce domaine.
                 </p>
             </li>
-            <li id="python">
+            <li id="python" itemscope itemtype="http://schema.org/ListItem">
                 <p>
-                    <dfn>Python</dfn><br>
-                    <span class="description_lg">Language interpret&eacute;</span>
+                    <dfn itemprop="name">Python</dfn><br>
+                    <span class="description_lg" itemprop="description">Language interpret&eacute;</span>
                 </p>
                 <progress max="100" value="83"></progress>
                 <p class="mes_comp">
 
                 </p>
             </li>
-            <li id="rub">
+            <li id="rub" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                 <p class="language">
-                    <dfn>Ruby</dfn>
+                    <dfn itemprop="name">Ruby</dfn>
                 </p>
                 <progress max="100" value="74"></progress>
                 <p class="mes_comp">
@@ -254,7 +254,7 @@
             <div id="check">
                 <input type="checkbox" id="ct" name="conscent_therms" class="input_form">
                 <label for="ct" id="consent_therms">Je certifie avoir pris connaissance et accepter les <span
-                        class="liens_verts">conditions relatives &agrave; la Vie Priv&eacute;e.</span></label>
+                        class="liens_verts"><a href="#" id="conditions">conditions relatives &agrave; la Vie Priv&eacute;e.</a></span></label>
             </div>
             <input type="submit" id="envoyer_form" value="Envoyez votre demande">
         </form>
@@ -387,32 +387,32 @@
         <a href="#section_contact" title="Allez au formulaire" itemprop="image"
            class="btn_contour">Contactez&nbsp;-&nbsp;moi</a>
     </section>
-    <section class="blanc sections" id="info_supp">
+    <section class="blanc sections" id="info_supp" itemscope itemtype="http://schema.org/Person">
         <h2 class="non_visible">
             Langue, permis et hobbies
         </h2>
         <div>
-            <p class="info_supp_titres">Langues</p>
+            <p class="info_supp_titres" itemprop="knowsLanguage">Langues</p>
             <p class="info_supp_p">
                 Je parle anglais (niveau B2 certifié) et je poss&egrave;de les bases de n&eacute;erlandais.
             </p>
         </div>
         <div>
-            <p class="info_supp_titres">Permis</p>
+            <p class="info_supp_titres" itemprop="hasCredential">Permis</p>
             <p class="info_supp_p">
                 Je poss&egrave;de le permis B et envisage de passer le permis moto.
             </p>
         </div>
-        <div>
+        <div itemscope itemtype="https://schema.org/Organization">
             <p class="info_supp_titres">Hobbies</p>
             <p class="info_supp_p">
                 J&rsquo;aime les voitures et les motos, je joue aux jeux vid&eacute;o, je pratique du tennis de table
                 (<span
-                    itemprop="affilitation">&Eacute;toile Donceel</span>) et je lis des webtoons.
+                    itemprop="legalName">&Eacute;toile Donceel</span>) et je lis des webtoons.
             </p>
         </div>
     </section>
-    <section class="color_section background-animation" id="mail_tel_section">
+    <section class="color_section background-animation" id="mail_tel_section" itemscope itemtype="http://schema.org/Person">
         <h2 id="mail_tel_title" class="titre_section">Me contacter par mail ou t&eacute;l&eacute;phone</h2>
         <p id="entretient`">
             N&rsquo;h&eacute;sitez pas&nbsp;&agrave; me recontacter en vue d&rsquo;un entretien&nbsp;!

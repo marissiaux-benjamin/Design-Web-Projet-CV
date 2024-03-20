@@ -478,6 +478,10 @@ abbr {
     margin-bottom: 1.5em;
 }
 
+#conditions{
+    color: #57BF91;
+}
+
 #consent_therms {
     font-size: 1.0625em;
 }
