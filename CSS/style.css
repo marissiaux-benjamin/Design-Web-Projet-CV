@@ -113,7 +113,8 @@ header {
     padding-bottom: 1em;
     padding-top: 1em;
 }
-#mon_logo{
+
+#mon_logo {
     margin-right: 14em;
 }
 
@@ -663,8 +664,20 @@ footer h2:first-of-type {
     line-height: 2.5em;
 }
 
-#mail_tel_section p:first-of-type, #mail_tel_email, .footer h2 {
+#mail_tel_section > br {
+    margin-bottom: 15em;
+}
+
+#mail_tel_section > p {
+    margin-bottom: 2em;
+    font-weight: lighter;
+}
+
+#mail_tel_email, .footer h2, #div_mail_tel p:first-of-type {
     font-weight: bold;
+}
+
+#mail_tel_section > p, #mail_tel_email, .footer h2, #div_mail_tel p:first-of-type {
     font-size: 1.625em;
 }
 
@@ -704,10 +717,18 @@ footer h2:first-of-type {
 .ul-footer a:hover, .list_nav_principale a:hover {
     color: rgba(4, 194, 141, 1);
 }
-.list_nav_principale a:hover{
+
+.list_nav_principale a:hover {
     border-bottom: 2px solid #57BF91;
 }
 
+@media (width > 1710px) {
+
+}
+
+@media (width > ) and (width < 1710px) {
+
+}
 
 
 
