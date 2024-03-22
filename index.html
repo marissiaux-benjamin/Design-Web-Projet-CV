@@ -12,10 +12,16 @@
     <title>Benjamin-Marissiaux-CV</title>
 </head>
 <body itemscope itemtype="https://schema.org/Person">
-<h1 class="non_visible" id="start"><span itemprop="name">Benjamin</span>&nbsp;-&nbsp;<span itemprop="familyName">Marissiaux</span>-<abbr title="curriculum vitae">CV</abbr></h1>
+<h1 class="non_visible" id="start"><span itemprop="name">Benjamin</span>&nbsp;-&nbsp;<span itemprop="familyName">Marissiaux</span>-<abbr
+        title="curriculum vitae">CV</abbr></h1>
 <header>
     <nav id="nav_Principale">
-        <h2 class="non_visible">Navigation Principale</h2>
+        <h2 id="mon_logo">
+            <a href="#">
+                <img src="/img/black_logo_1.svg" alt="logo de Benjamin Marissiaux">
+            </a>
+        </h2>
+
         <ul class="list_nav_principale">
             <li><a href="#xp">Mes exp&eacute;riences</a></li>
             <li><a href="#languages">Ma&icirc;trise de langages</a></li>
@@ -148,10 +154,11 @@
             <li id="java" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                 <p class="language">
                     <dfn itemprop="name">Javascript</dfn> <br>
-                    <span class="description_lg" itemprop="description">Langage de programmation orient&eacute; objet.</span>
+                    <span class="description_lg"
+                          itemprop="description">Langage de programmation orient&eacute; objet.</span>
                 </p>
                 <progress max="100" value="86" class="star_bar"></progress>
-                <p class="mes_comp" >
+                <p class="mes_comp">
                     Je poss&egrave;de des comp&eacute;tences assez d&eacute;velopp&eacute;es en javascript. Ayant
                     beaucoup travaill&eacute; dans le frontend, j&rsquo;ai acquis pas mal de savoir faire en
                     <abbr title="Javascript">JS</abbr>.
@@ -381,7 +388,12 @@
         <p>
             Retrouvez ici 4 quelques visuels projets sur lesquels j&rsquo;ai travaill&eacute; durant ma carri&egrave;re.
         </p>
-        <img src="" alt="4 images de mes différents projets" itemprop="image">
+        <div>
+            <img src="" alt="1 images d'un de mes projet" itemprop="image">
+            <img src="" alt="1 images d'un de mes projet" itemprop="image">
+            <img src="" alt="1 images d'un de mes projet" itemprop="image">
+            <img src="" alt="1 images d'un de mes projet" itemprop="image">
+        </div>
         <a href="" title="Découvrez mon portfolio" itemprop="image" class="btn_rempli">D&eacute;couvrez mon
             portfolio</a>
         <a href="#section_contact" title="Allez au formulaire" itemprop="image"
@@ -412,7 +424,8 @@
             </p>
         </div>
     </section>
-    <section class="color_section background-animation" id="mail_tel_section" itemscope itemtype="http://schema.org/Person">
+    <section class="color_section background-animation" id="mail_tel_section" itemscope
+             itemtype="http://schema.org/Person">
         <h2 id="mail_tel_title" class="titre_section">Me contacter par mail ou t&eacute;l&eacute;phone</h2>
         <p id="entretient`">
             N&rsquo;h&eacute;sitez pas&nbsp;&agrave; me recontacter en vue d&rsquo;un entretien&nbsp;!

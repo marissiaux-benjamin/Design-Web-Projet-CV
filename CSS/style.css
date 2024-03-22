@@ -109,6 +109,12 @@ header {
 #nav_Principale {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+#mon_logo{
+    margin-right: 14em;
 }
 
 #mp_btn {
@@ -167,6 +173,7 @@ header {
 
 .list_nav_principale .phone_number:hover {
     color: white;
+    border-bottom: none;
 }
 
 #main_title {
@@ -236,7 +243,9 @@ a {
 .list_nav_principale {
     justify-content: right;
     align-items: center;
-    padding: 1.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-right: 2em;
 }
 
 .list_nav_principale a {
@@ -245,6 +254,10 @@ a {
     font-size: 1.125em;
     text-transform: uppercase;
     font-weight: bold;
+}
+
+#mon_logo {
+    width: 8em;
 }
 
 #intro {
@@ -478,7 +491,7 @@ abbr {
     margin-bottom: 1.5em;
 }
 
-#conditions{
+#conditions {
     color: #57BF91;
 }
 
@@ -570,6 +583,12 @@ article {
 #projets p {
     font-size: 1.375em;
     margin-bottom: 2em;
+}
+
+#projets div:first-of-type {
+    display: flex;
+    justify-content: center;
+    column-gap: 3em;
 }
 
 #info_supp {
@@ -685,7 +704,9 @@ footer h2:first-of-type {
 .ul-footer a:hover, .list_nav_principale a:hover {
     color: rgba(4, 194, 141, 1);
 }
-
+.list_nav_principale a:hover{
+    border-bottom: 2px solid #57BF91;
+}
 
 
 
