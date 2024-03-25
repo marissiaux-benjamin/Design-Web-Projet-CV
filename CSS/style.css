@@ -114,6 +114,23 @@ header {
     padding-top: 1em;
 }
 
+.underlined {
+    margin-top: .9em;
+    margin-left: 20%;
+    height: 3px;
+    width: 0;
+    transition: all .6s ease;
+}
+
+.list_nav_principale li:hover .underlined {
+    width: 50%;
+    background-color: rgba(4, 194, 141, 1);
+}
+
+.list_nav_principale li{
+    transform: translateY(10px);
+}
+
 #mon_logo {
     margin-right: 14em;
 }
@@ -174,7 +191,7 @@ header {
 
 .list_nav_principale .phone_number:hover {
     color: white;
-    border-bottom: none;
+
 }
 
 #main_title {
@@ -245,7 +262,6 @@ a {
     justify-content: right;
     align-items: center;
     padding-top: 1em;
-    padding-bottom: 1em;
     padding-right: 2em;
 }
 
@@ -331,10 +347,6 @@ a {
 
 #div_projet {
     padding: 2em 3em 3em 2em;
-}
-
-.background-animation {
-
 }
 
 .p_xp {
@@ -460,8 +472,8 @@ abbr {
 }
 
 .input_form {
-    color: black;
-    font-family: sans-serif;
+    color: gray;
+    font-family: 'Lato-Light', serif;
     font-size: 1em;
     border: 3px solid black;
     border-radius: 1.5em;
@@ -718,15 +730,11 @@ footer h2:first-of-type {
     color: rgba(4, 194, 141, 1);
 }
 
-.list_nav_principale a:hover {
-    border-bottom: 2px solid #57BF91;
-}
-
 @media (width > 1710px) {
 
 }
 
-@media (width > ) and (width < 1710px) {
+@media (width > 800px) and (width < 1710px) {
 
 }
 
