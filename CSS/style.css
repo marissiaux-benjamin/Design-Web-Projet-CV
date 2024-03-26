@@ -109,7 +109,6 @@ header {
 #nav_Principale {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
     padding-bottom: 1em;
     padding-top: 1em;
 }
@@ -127,8 +126,8 @@ header {
     background-color: rgba(4, 194, 141, 1);
 }
 
-.list_nav_principale li{
-    transform: translateY(10px);
+.list_nav_principale li:not(:last-child) {
+    transform: translateY(20px);
 }
 
 #mon_logo {
@@ -191,7 +190,6 @@ header {
 
 .list_nav_principale .phone_number:hover {
     color: white;
-
 }
 
 #main_title {
@@ -261,9 +259,13 @@ a {
 .list_nav_principale {
     justify-content: right;
     align-items: center;
-    padding-top: 1em;
     padding-right: 2em;
 }
+
+/*.list_nav_principale li:last-of-type{
+    position: absolute;
+    top:20%;
+}*/
 
 .list_nav_principale a {
     color: black;
