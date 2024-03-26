@@ -123,6 +123,9 @@ header {
 
 .list_nav_principale li:hover .underlined {
     width: 50%;
+}
+
+.list_nav_principale li:hover .underlined, .ul-footer li:hover .hyphens {
     background-color: rgba(4, 194, 141, 1);
 }
 
@@ -695,29 +698,28 @@ footer h2:first-of-type {
     font-size: 1.625em;
 }
 
-.ul-footer a:before {
+.hyphens {
     display: inline-block;
     background-color: #222222;
     content: '';
-    width: 20px;
+    width: 30px;
     height: 2px;
     transform: translateY(-5px);
-    margin-right: 1em;
+    transition: all .2s ease;
+    margin-right: .8em;
+}
+
+.ul-footer li:hover .hyphens {
+    width: 50px;
 }
 
 .ul-footer a {
     transition: transform .3s ease-out;
-
 }
 
-.ul-footer a:hover {
-    transform: translateX(15px);
+.ul-footer li:hover a {
+    color: #57BF91;
 }
-
-.ul-footer a:hover ~ .ul-footer a:before {
-    background-color: #57BF91;
-}
-
 
 .ul-footer a {
     display: inline-block;
