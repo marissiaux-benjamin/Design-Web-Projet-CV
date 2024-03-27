@@ -22,6 +22,11 @@
             </a>
         </h2>
 
+        <div id="burger_menu">
+            <input type="checkbox" id="toggle">
+            <label id="bg_menu_btn" for="toggle"><span></span></label>
+        </div>
+
         <ul class="list_nav_principale">
             <li>
                 <a href="#xp" tabindex="2">
@@ -30,37 +35,37 @@
                 </a>
             </li>
             <li>
-                <a href="#languages">
+                <a href="#languages" tabindex="3">
                     Ma&icirc;trise de langages
                     <div class="underlined"></div>
                 </a>
             </li>
             <li>
-                <a href="#section_contact">
+                <a href="#section_contact" tabindex="4">
                     Contactez&nbsp;-&nbsp;moi
                     <div class="underlined"></div>
                 </a>
             </li>
             <li>
-                <a href="#about_me">
+                <a href="#about_me" tabindex="5">
                     Autres skills
                     <div class="underlined"></div>
                 </a>
             </li>
             <li>
-                <a href="#mes_projets">
+                <a href="#mes_projets" tabindex="6">
                     Mes projets
                     <div class="underlined"></div>
                 </a>
             </li>
             <li>
-                <a href="#mail_tel_section">
+                <a href="#mail_tel_section" tabindex="7">
                     Mail et T&eacute;l&eacute;phone
                     <div class="underlined"></div>
                 </a>
             </li>
             <li class="phone_btn">
-                <a href="#" class="phone_number">0474&nbsp;40&nbsp;51&nbsp;22</a>
+                <a href="#" class="phone_number" tabindex="8">0474&nbsp;40&nbsp;51&nbsp;22</a>
             </li>
         </ul>
     </nav>
@@ -74,8 +79,8 @@
             D&eacute;velopeur frontend en <span itemprop="workLocation">Wallonie</span>&nbsp;-&nbsp;<span
                 itemprop="homeLocation">Li&egrave;ge, 342 Fexhe-le-Haut-Clocher.</span>
         </p>
-        <a href="#" id="mp_btn" class="btn_rempli">Mon Portfolio</a>
-        <a href="#" class="btn_contour special">Mes tarifs</a>
+        <a href="#" id="mp_btn" class="btn_rempli" tabindex="9">Mon Portfolio</a>
+        <a href="#" class="btn_contour special" tabindex="10">Mes tarifs</a>
 
     </section>
     <section id="xp" class="sections">
@@ -179,7 +184,7 @@
     </section>
     <section id="languages" class="g_section sections" itemscope itemtype="http://schema.org/ItemList">
         <h2 class="titre_section maitrise">Ma&icirc;trise de langages</h2>
-        <a href="#" class="liens_verts lien-maitrise">Voir mes comp&eacute;tences en liste</a><br>
+        <a href="#" class="liens_verts lien-maitrise" tabindex="11">Voir mes comp&eacute;tences en liste</a><br>
         <img src="img/big_stars.svg" alt="4,1 étoiles sur 5" height="24" itemprop="image">
         <p class="moyenne"><span class="bold">4,1 sur 5</span> de moyenne</p>
         <ul id="liste_maitrise">
@@ -281,22 +286,22 @@
             Remplissez le formulaire pour me contacter.
         </p>
         <form id="contact" action="#" method="get">
-            <input type="text" placeholder="Nom, Pr&eacute;nom" required id="name" class="input_form">
+            <input type="text" placeholder="Nom, Pr&eacute;nom" required id="name" tabindex="12" class="input_form">
             <label for="name"></label>
-            <input type="tel" placeholder="T&eacute;l&eacute;phone" required id="phone" class="input_form">
+            <input type="tel" placeholder="T&eacute;l&eacute;phone" required id="phone" tabindex="13" class="input_form">
             <label for="phone"></label>
-            <input type="email" placeholder="e&nbsp;-&nbsp;mail" required id="email" class="input_form">
+            <input type="email" placeholder="e&nbsp;-&nbsp;mail" required id="email" tabindex="14" class="input_form">
             <label for="email"></label>
             <textarea maxlength="500"
                       placeholder="&Eacute;crivez votre id&eacute;e de projet ou des questions me concernant…" rows="10"
-                      cols="40" required id="desc" class="input_form"></textarea>
+                      cols="40" required id="desc" tabindex="15" class="input_form"></textarea>
             <label for="desc"></label>
             <div id="check">
-                <input type="checkbox" id="ct" name="conscent_therms" class="input_form">
+                <input type="checkbox" id="ct" name="conscent_therms" tabindex="16">
                 <label for="ct" id="consent_therms">Je certifie avoir pris connaissance et accepter les <span
                         class="liens_verts"><a href="#" id="conditions">conditions relatives &agrave; la Vie Priv&eacute;e.</a></span></label>
             </div>
-            <input type="submit" id="envoyer_form" value="Envoyez votre demande">
+            <input type="submit" id="envoyer_form" value="Envoyez votre demande" tabindex="17">
         </form>
     </section>
     <section id="about_me" class="color_section sections">
@@ -350,7 +355,7 @@
                     <span class="bold">
                         &Ecirc;tes&nbsp;-&nbsp;vous convaincu de mon profil&nbsp;?
                     </span><br>
-                    <a href="#section_contact" class="btn_rempli">Contactez&nbsp;-&nbsp;moi</a>
+                    <a href="#section_contact" tabindex="18" class="btn_rempli">Contactez&nbsp;-&nbsp;moi</a>
                 </p>
             </div>
         </article>
@@ -408,7 +413,7 @@
                 <p id="interested">
                     Int&eacute;ress&eacute; par un projet perso&nbsp;?
                 </p>
-                <a href="#section_contact" title="allez au formulaire" class="btn_rempli">
+                <a href="#section_contact" title="allez au formulaire" tabindex="19" class="btn_rempli">
                     Contactez&nbsp;-&nbsp;moi
                 </a>
             </div>
@@ -427,9 +432,9 @@
             <img src="" alt="1 images d'un de mes projet" itemprop="image">
             <img src="" alt="1 images d'un de mes projet" itemprop="image">
         </div>
-        <a href="" title="Découvrez mon portfolio" itemprop="image" class="btn_rempli">D&eacute;couvrez mon
+        <a href="" title="Découvrez mon portfolio" itemprop="image" class="btn_rempli" tabindex="20">D&eacute;couvrez mon
             portfolio</a>
-        <a href="#section_contact" title="Allez au formulaire" itemprop="image"
+        <a href="#section_contact" title="Allez au formulaire" itemprop="image" tabindex="21"
            class="btn_contour">Contactez&nbsp;-&nbsp;moi</a>
     </section>
     <section class="blanc sections" id="info_supp" itemscope itemtype="http://schema.org/Person">
@@ -463,8 +468,8 @@
         <p id="entretient`">
             N&rsquo;h&eacute;sitez pas&nbsp;&agrave; me recontacter en vue d&rsquo;un entretien&nbsp;!
         </p>
-        <a href="#footer" class="btn_rempli">Mes r&eacute;seaux</a>
-        <a href="#section_contact" class="btn_contour">Contactez&nbsp;-&nbsp;moi</a><br>
+        <a href="#footer"  tabindex="22" class="btn_rempli">Mes r&eacute;seaux</a>
+        <a href="#section_contact"  tabindex="23" class="btn_contour">Contactez&nbsp;-&nbsp;moi</a><br>
         <img src="/img/" alt="photo de Benjamin Marissiaux" itemprop="image">
         <div class="rectangle_gris" id="div_mail_tel">
             <img src="/icons/green_tel.svg" alt="icon de téléphone" itemprop="image" width="50" height="50">
@@ -483,7 +488,7 @@
             </p>
         </div>
     </section>
-    <a href="#" title="Revenez en haut de la page">
+    <a href="#" title="Revenez en haut de la page"  tabindex="24">
         <svg height="40" width="40" id="up_btn">
             <rect height="40"
                   width="40"
@@ -507,30 +512,26 @@
         <p>
             blabla
         </p>
-        <a href="#" id="client_btn">client</a>
+        <a href="#" id="client_btn"  tabindex="25">client</a>
     </section>
     <section class="footer">
         <h2>Mes r&eacute;seaux</h2>
         <ul class="ul-footer">
             <li>
                 <div class="hyphens"></div>
-                <a href="https://www.instagram.com/ben.m.0_o/">Instagram&nbsp;: ben.m.0_o</a>
+                <a href="https://www.instagram.com/ben.m.0_o/" title="Visitez mon instagram" tabindex="26">Instagram&nbsp;: ben.m.0_o</a>
             </li>
             <li>
                 <div class="hyphens"></div>
-                <a href="">Facebook&nbsp;: Benjamin <span itemprop="familyName">Marissiaux</span></a>
+                <a href="" title="Visitez mon Facebook"  tabindex="27">Facebook&nbsp;: Benjamin <span itemprop="familyName">Marissiaux</span></a>
             </li>
             <li>
                 <div class="hyphens"></div>
-                <a href="">Github&nbsp;: marissiaux_benjamin</a>
+                <a href="https://github.com/marissiaux-benjamin" title="Visitez mon Github" tabindex="28">Github&nbsp;: marissiaux_benjamin</a>
             </li>
             <li>
                 <div class="hyphens"></div>
-                <a href="">Messenger&nbsp;: Benjamin <span itemprop="familyName">Marissiaux</span></a>
-            </li>
-            <li>
-                <div class="hyphens"></div>
-                <a href="">Linkedin&nbsp;: Ben1</a>
+                <a href="" title="Visitez mon Linkedin" tabindex="29">Linkedin&nbsp;: Ben1</a>
             </li>
         </ul>
     </section>
@@ -540,20 +541,20 @@
             <li>
                 <div class="hyphens"></div>
                 <a href="https://www.alsacreations.com/"
-                   title="Aller sur le site d'Alsacreation">Alsacr&eacute;ation</a>
+                   title="Aller sur le site d'Alsacreation" tabindex="30">Alsacr&eacute;ation</a>
             </li>
             <li>
                 <div class="hyphens"></div>
-                <a href="https://shorturl.at/hpGPZ" title="Aller sur le site de Fiverr">Fiverr</a>
+                <a href="https://shorturl.at/hpGPZ" title="Aller sur le site de Fiverr" tabindex="31">Fiverr</a>
             </li>
             <li>
                 <div class="hyphens"></div>
-                <a href="https://dribbble.com/" title="Aller sur le site de Dribbble">Dribbble</a>
+                <a href="https://dribbble.com/" title="Aller sur le site de Dribbble" tabindex="32">Dribbble</a>
             </li>
             <li>
                 <div class="hyphens"></div>
                 <a href="https://webflow.com/?utm_source=google&utm_medium=search&utm_campaign=SS-GoogleSearch-Brand-Tier3&utm_term=kwd-11668981_webflow_e_649953696920__&gad_source=1&gclid=Cj0KCQiA5rGuBhCnARIsAN11vgTE6U3toY_KNumtIJyD1gVOFsVY2BjUy4jfz7jUs-o0hNtfQm8TM0caArW8EALw_wcB"
-                   title="Aller qur le site de Webflow">
+                   title="Aller qur le site de Webflow" tabindex="33">
                     Webflow
                 </a>
             </li>
