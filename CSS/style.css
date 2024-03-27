@@ -108,9 +108,8 @@ header {
 
 #nav_Principale {
     display: flex;
-    justify-content: flex-end;
-    padding-bottom: 1em;
-    padding-top: 1em;
+    justify-content: space-between;
+    padding: 1em 3em;
 }
 
 .underlined {
@@ -131,10 +130,6 @@ header {
 
 .list_nav_principale li:not(:last-child) {
     transform: translateY(20px);
-}
-
-#mon_logo {
-    margin-right: 14em;
 }
 
 #mp_btn {
@@ -262,13 +257,7 @@ a {
 .list_nav_principale {
     justify-content: right;
     align-items: center;
-    padding-right: 2em;
 }
-
-/*.list_nav_principale li:last-of-type{
-    position: absolute;
-    top:20%;
-}*/
 
 .list_nav_principale a {
     color: black;
@@ -739,8 +728,10 @@ footer h2:first-of-type {
     color: rgba(4, 194, 141, 1);
 }
 
-@media (width > 1710px) {
-
+@media (width <= 500px) {
+    footer{
+        display: initial;
+    }
 }
 
 @media (width > 800px) and (width < 1710px) {
