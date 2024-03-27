@@ -471,12 +471,14 @@ abbr {
 }
 
 #contact {
-    display: flex;
+    /*display: flex;*/
     padding: 0 30em;
-    flex-direction: column;
+    /*flex-direction: column;*/
 }
 
 .input_form {
+    display: inline-block;
+    min-width: 100%;
     color: gray;
     font-family: 'Lato-Light', serif;
     font-size: 1em;
@@ -666,11 +668,14 @@ article {
 footer {
     display: flex;
     justify-content: space-evenly;
-    padding-bottom: 3em;
+    padding: 1em 10em 3em;
 }
 
 footer h2:first-of-type {
     margin-bottom: .8em;
+}
+.footer{
+    width: 20em;
 }
 
 .footer h2 {
