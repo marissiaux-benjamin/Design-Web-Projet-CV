@@ -800,6 +800,7 @@ footer h2:first-of-type {
         top: 0;
         -ms-transform: rotate(90deg);
         transform: rotate(90deg);
+        width: 100%;
     }
 
     #toggle:checked ~ #burger_menu {
@@ -827,9 +828,9 @@ footer h2:first-of-type {
         transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         background-color: black;
-        transition: background-color 0.2s ease-in-out;
-        -o-transition: background-color 0.2s ease-in-out;
-        -webkit-transition: background-color 0.2s ease-in-out;
+        transition: 0.4s ease-in-out;
+        -o-transition:  0.4s ease-in-out;
+        -webkit-transition:  0.4s ease-in-out;
     }
 
     #burger_menu span:before, #burger_menu span:after {
@@ -840,7 +841,7 @@ footer h2:first-of-type {
         -webkit-transition: -webkit-transform 0.2s ease-in-out;
         transition: -webkit-transform 0.2s ease-in-out;
         -o-transition: transform 0.2s ease-in-out;
-        transition: width 0.2s ease-in-out;
+        transition: 0.2s ease-in-out;
     }
 
 
