@@ -105,7 +105,8 @@ header {
     background-color: white;
     z-index: 1000;
 }
-#burger_menu{
+
+#burger_menu {
     display: none;
 }
 
@@ -747,6 +748,7 @@ footer h2:first-of-type {
 
     #toggle {
         opacity: 0;
+        transform: translateY(2em);
     }
 
     #toggle:checked ~ #burger_menu {
@@ -764,11 +766,15 @@ footer h2:first-of-type {
     #bg_menu_btn span:before {
         right: 0;
         width: 30%;
+        -ms-transform: translateY(-0.6em);
+        transform: translateY(-0.6em);
     }
 
     #bg_menu_btn span:after {
         right: 0;
         width: 60%;
+        -ms-transform: translateY(0.6em);
+        transform: translateY(0.6em);
     }
 
     #burger_menu:hover span:before, #burger_menu:hover span:after {
@@ -809,15 +815,13 @@ footer h2:first-of-type {
 
     #burger_menu {
         display: initial;
-        z-index: 3;
-        width: 2em;
-        height: 1.5em;
+        width: 2.2em;
         position: relative;
         cursor: pointer;
     }
 
     #burger_menu span {
-        height: 0.2em;
+        height: 0.3em;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -830,7 +834,7 @@ footer h2:first-of-type {
 
     #burger_menu span:before, #burger_menu span:after {
         content: '';
-        height: 0.2em;
+        height: 0.3em;
         background-color: black;
         position: absolute;
         -webkit-transition: -webkit-transform 0.2s ease-in-out;
@@ -839,15 +843,8 @@ footer h2:first-of-type {
         transition: width 0.2s ease-in-out;
     }
 
-    #burger_menu span:before {
-        -ms-transform: translateY(-0.5em);
-        transform: translateY(-0.5em);
-    }
 
-    #burger_menu span:after {
-        -ms-transform: translateY(0.5em);
-        transform: translateY(0.5em);
-    }
+
 }
 
 
