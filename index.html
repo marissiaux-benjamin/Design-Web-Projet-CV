@@ -16,16 +16,16 @@
         title="curriculum vitae">CV</abbr></h1>
 <header>
     <nav id="nav_Principale">
-        <h2 id="mon_logo" >
+        <h2 id="mon_logo">
             <a href="#" tabindex="1">
                 <img src="/img/black_logo_1.svg" alt="logo de Benjamin Marissiaux" width="128">
             </a>
         </h2>
 
-        <div id="burger_menu">
-            <input type="checkbox" id="toggle">
-            <label id="bg_menu_btn" for="toggle"><span></span></label>
-        </div>
+        <input type="checkbox" id="toggle">
+        <label id="bg_menu_btn" for="toggle">
+            <span id="bg_icon"></span>
+        </label>
 
         <ul class="list_nav_principale">
             <li>
@@ -65,7 +65,7 @@
                 </a>
             </li>
             <li class="phone_btn">
-                <a href="#" class="phone_number" tabindex="8">0474&nbsp;40&nbsp;51&nbsp;22</a>
+                <a href="tel:+32474405122" class="phone_number" tabindex="8">0474&nbsp;40&nbsp;51&nbsp;22</a>
             </li>
         </ul>
     </nav>
@@ -80,7 +80,7 @@
                 itemprop="homeLocation">Li&egrave;ge, 342 Fexhe-le-Haut-Clocher.</span>
         </p>
         <a href="#" id="mp_btn" class="btn_rempli" tabindex="9">Mon Portfolio</a>
-        <a href="#" class="btn_contour special" tabindex="10">Mes tarifs</a>
+        <a href="#" class="btn_contour special_btn" tabindex="10">Mes tarifs</a>
 
     </section>
     <section id="xp" class="sections">
@@ -125,7 +125,7 @@
                         Enseignant
                     </h3>
                     <p itemprop="description">
-                        J&rsquo;ai enseign&eacute; l&rsquo;informatique dans l&rsquo;enseignement secondaire durant 3
+                        J&rsquo;ai enseign&eacute; l&rsquo;informatique dans l&rsquo;enseignement secondaire au Collège Saint&nbsp;-&nbsp;Louis à Waremme durant 3
                         ans. Cela m&rsquo;a permis de devenir structur&eacute; dans mes leçons
                         ainsi que d&rsquo;&ecirc;tre plus clair dans mes explications et mon approche de probl&egrave;mes.
                     </p>
@@ -288,13 +288,14 @@
         <form id="contact" action="#" method="get">
             <input type="text" placeholder="Nom, Pr&eacute;nom" required id="name" tabindex="12" class="input_form">
             <label for="name"></label>
-            <input type="tel" placeholder="T&eacute;l&eacute;phone" required id="phone" tabindex="13" class="input_form">
+            <input type="tel" placeholder="T&eacute;l&eacute;phone" required id="phone" tabindex="13"
+                   class="input_form">
             <label for="phone"></label>
             <input type="email" placeholder="e&nbsp;-&nbsp;mail" required id="email" tabindex="14" class="input_form">
             <label for="email"></label>
             <textarea maxlength="500"
                       placeholder="&Eacute;crivez votre id&eacute;e de projet ou des questions me concernant…" rows="10"
-                      cols="40" required id="desc" tabindex="15" class="input_form"></textarea>
+                       required id="desc" tabindex="15" class="input_form"></textarea>
             <label for="desc"></label>
             <div id="check">
                 <input type="checkbox" id="ct" name="conscent_therms" tabindex="16">
@@ -432,7 +433,8 @@
             <img src="" alt="1 images d'un de mes projet" itemprop="image">
             <img src="" alt="1 images d'un de mes projet" itemprop="image">
         </div>
-        <a href="" title="Découvrez mon portfolio" itemprop="image" class="btn_rempli" tabindex="20">D&eacute;couvrez mon
+        <a href="" title="Découvrez mon portfolio" itemprop="image" class="btn_rempli" tabindex="20">D&eacute;couvrez
+            mon
             portfolio</a>
         <a href="#section_contact" title="Allez au formulaire" itemprop="image" tabindex="21"
            class="btn_contour">Contactez&nbsp;-&nbsp;moi</a>
@@ -468,8 +470,8 @@
         <p id="entretient`">
             N&rsquo;h&eacute;sitez pas&nbsp;&agrave; me recontacter en vue d&rsquo;un entretien&nbsp;!
         </p>
-        <a href="#footer"  tabindex="22" class="btn_rempli">Mes r&eacute;seaux</a>
-        <a href="#section_contact"  tabindex="23" class="btn_contour">Contactez&nbsp;-&nbsp;moi</a><br>
+        <a href="#footer" tabindex="22" class="btn_rempli">Mes r&eacute;seaux</a>
+        <a href="#section_contact" tabindex="23" class="btn_contour">Contactez&nbsp;-&nbsp;moi</a><br>
         <img src="/img/" alt="photo de Benjamin Marissiaux" itemprop="image">
         <div class="rectangle_gris" id="div_mail_tel">
             <img src="/icons/green_tel.svg" alt="icon de téléphone" itemprop="image" width="50" height="50">
@@ -488,7 +490,7 @@
             </p>
         </div>
     </section>
-    <a href="#" title="Revenez en haut de la page"  tabindex="24">
+    <a href="#" title="Revenez en haut de la page" tabindex="24">
         <svg height="40" width="40" id="up_btn">
             <rect height="40"
                   width="40"
@@ -512,22 +514,25 @@
         <p>
             blabla
         </p>
-        <a href="#" id="client_btn"  tabindex="25">client</a>
+        <a href="tel:+32474405122" id="phone_btn_footer" tabindex="25">0474&nbsp;40&nbsp;51&nbsp;22</a>
     </section>
     <section class="footer">
         <h2>Mes r&eacute;seaux</h2>
         <ul class="ul-footer">
             <li>
                 <div class="hyphens"></div>
-                <a href="https://www.instagram.com/ben.m.0_o/" title="Visitez mon instagram" tabindex="26">Instagram&nbsp;: ben.m.0_o</a>
+                <a href="https://www.instagram.com/ben.m.0_o/" title="Visitez mon instagram" tabindex="26">Instagram&nbsp;:
+                    ben.m.0_o</a>
             </li>
             <li>
                 <div class="hyphens"></div>
-                <a href="" title="Visitez mon Facebook"  tabindex="27">Facebook&nbsp;: Benjamin <span itemprop="familyName">Marissiaux</span></a>
+                <a href="" title="Visitez mon Facebook" tabindex="27">Facebook&nbsp;: Benjamin <span
+                        itemprop="familyName">Marissiaux</span></a>
             </li>
             <li>
                 <div class="hyphens"></div>
-                <a href="https://github.com/marissiaux-benjamin" title="Visitez mon Github" tabindex="28">Github&nbsp;: marissiaux_benjamin</a>
+                <a href="https://github.com/marissiaux-benjamin" title="Visitez mon Github" tabindex="28">Github&nbsp;:
+                    marissiaux_benjamin</a>
             </li>
             <li>
                 <div class="hyphens"></div>
