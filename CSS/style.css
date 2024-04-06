@@ -138,6 +138,8 @@ header {
 
 #mp_btn {
     margin-right: 1em;
+    color: #222222;
+    background-color: white;
 }
 
 .btn_rempli, .btn_contour {
@@ -220,6 +222,7 @@ header {
 
 .special_btn {
     color: white;
+    border-color: white;
 }
 
 .titre_section {
@@ -623,24 +626,34 @@ article div p, div.text_projet:first-child, div.text_projet:nth-child(2) {
     text-align: left;
 }
 
+#mail_tel_title {
+    margin-bottom: .3em;
+}
+
 #entretient {
     margin-bottom: 2em;
     font-size: 7em;
     font-weight: lighter;
 }
 
+#photo_benjamin_mail_tel {
+    position: absolute;
+    top: 55%;
+    right: 70%;
+}
+
 #mail_tel_section {
     position: relative;
-    min-height: 40em;
-    padding: 4em 1em 4em 15em;
+    min-height: 45em;
+    padding: 4em 1em 4em 10em;
 }
 
 #mail_tel_section div {
     background-color: #fafafa;
     max-width: 20em;
     position: absolute;
-    right: 15em;
-    top: 25%;
+    right: 15%;
+    top: 35%;
 }
 
 #div_mail_tel p:first-of-type, #mail_tel_email {
@@ -657,6 +670,7 @@ article div p, div.text_projet:first-child, div.text_projet:nth-child(2) {
 
 footer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 1em 10em 3em;
 }
@@ -734,6 +748,120 @@ footer h2:first-of-type {
     .phone_btn {
         display: none;
     }
+}
+
+@media (width < 1440px) {
+    article {
+        margin: 0 6em;
+        display: grid;
+        row-gap: 3em;
+        grid-template-areas: ". div1 div2 ."
+                             ". div_projet div_projet .";
+    }
+
+    #div1 {
+        grid-area: div1;
+    }
+
+    #div2 {
+        grid-area: div2;
+    }
+
+    #div_projet {
+        grid-area: div_projet;
+    }
+
+}
+
+@media (width < 1386px) {
+
+    #liste_xp {
+        padding-bottom: 4em;
+        display: grid;
+        grid-template-areas:
+            ". first second ."
+            ". third fourth ."
+            ". last xp_sup ."
+            ". rencontre rencontre .";
+        grid-auto-columns: 1fr 2fr 2fr 1fr;
+        column-gap: 6em;
+        row-gap: 2.7778em;
+    }
+
+    #java, #css, #html, #sql, #ts, #php, #pyth, #rub, #first_job, #second_job, #third_job, #fourth_job, #last_job {
+        text-align: center;
+    }
+
+    #first_job {
+        grid-area: first;
+    }
+
+    #second_job {
+        grid-area: second;
+    }
+
+    #third_job {
+        grid-area: third;
+    }
+
+    #fourth_job {
+        grid-area: fourth;
+    }
+
+    #last_job {
+        grid-area: last;
+    }
+
+    #plus_xp {
+        grid-area: xp_sup;
+        text-align: center;
+    }
+
+    #liste_maitrise {
+        /*margin-top: 2em;*/
+        display: grid;
+        column-gap: 4em;
+        row-gap: 4em;
+        grid-template-areas:
+            "js css html "
+            "sql ts php "
+            " pyth rub . ";
+        grid-auto-columns: 2fr 2fr 2fr;
+        justify-content: center;
+    }
+
+    #java {
+        grid-area: js;
+    }
+
+    #css {
+        grid-area: css;
+    }
+
+    #html {
+        grid-area: html;
+    }
+
+    #sql {
+        grid-area: sql;
+    }
+
+    #ts {
+        grid-area: ts;
+    }
+
+    #php {
+        grid-area: php;
+    }
+
+    #pyth {
+        grid-area: pyth;
+    }
+
+    #rub {
+        grid-area: rub;
+    }
+
 }
 
 @media (width < 1365px ) {
@@ -859,146 +987,23 @@ footer h2:first-of-type {
         transition: 0.2s ease-in-out;
     }
 
-}
-
-@media (width < 1386px) {
-
-    #liste_xp {
-        padding-bottom: 4em;
-        display: grid;
-        grid-template-areas:
-            ". first second ."
-            ". third fourth ."
-            ". last xp_sup ."
-            ". rencontre rencontre .";
-        grid-auto-columns: 1fr 2fr 2fr 1fr;
-        column-gap: 6em;
-        row-gap: 2.7778em;
-    }
-
-    #java, #css, #html, #sql, #ts, #php, #pyth, #rub, #first_job, #second_job, #third_job, #fourth_job, #last_job {
-        text-align: center;
-    }
-
-    #first_job {
-        grid-area: first;
-    }
-
-    #second_job {
-        grid-area: second;
-    }
-
-    #third_job {
-        grid-area: third;
-    }
-
-    #fourth_job {
-        grid-area: fourth;
-    }
-
-    #last_job {
-        grid-area: last;
-    }
-
-    #plus_xp {
-        grid-area: xp_sup;
-        text-align: center;
-    }
-
-    #liste_maitrise {
-        margin-top: 2em;
-        padding: 0 20em 5em;
-        display: grid;
-        column-gap: 4em;
-        row-gap: 4em;
-        grid-template-areas:
-            "js css html "
-            "sql ts php "
-            " pyth rub . ";
-        grid-auto-columns: 2fr 2fr 2fr;
-    }
-
-    #java {
-        grid-area: js;
-    }
-
-    #css {
-        grid-area: css;
-    }
-
-    #html {
-        grid-area: html;
-    }
-
-    #sql {
-        grid-area: sql;
-    }
-
-    #ts {
-        grid-area: ts;
-    }
-
-    #php {
-        grid-area: php;
-    }
-
-    #pyth {
-        grid-area: pyth;
-    }
-
-    #rub {
-        grid-area: rub;
-    }
-
-}
-
-@media (width < 1440px) {
-    article {
-        display: grid;
-        row-gap: 3em;
-        grid-template-areas: ". div1 div2 ."
-                             ". div_projet div_projet .";
-    }
-
-    #div1 {
-        grid-area: div1;
-    }
-
-    #div2 {
-        grid-area: div2 ;
-    }
-
-    #div_projet{
-        grid-area: div_projet ;
-    }
 
 }
 
 @media (width < 1100px ) {
     #projets_info {
-        display: grid;
         row-gap: 3em;
-        grid-template-areas: ". a b ."
-                             ". div_interest div_interest .";
     }
 
-    #projets_info:first-child {
-        grid-area: div1;
+    #div_interest {
+        max-width: initial;
     }
-
-    #projets_info:nth-child(2) {
-        grid-area: div2 ;
-    }
-    #div_interest{
-        grid-area: div_interest;
-    }
-
 }
 
 
-@media (width <= 500px) {
+@media (width <= 970px) {
     footer {
-        display: initial;
+        flex-wrap: wrap;
     }
 }
 
