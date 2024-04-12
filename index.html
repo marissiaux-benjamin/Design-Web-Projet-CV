@@ -14,17 +14,17 @@
 <body itemscope itemtype="https://schema.org/Person">
 <h1 class="non_visible" id="start"><span itemprop="name">Benjamin</span>&nbsp;-&nbsp;<span itemprop="familyName">Marissiaux</span>-<abbr
         title="curriculum vitae">CV</abbr></h1>
-<header>
+<header class="no_js">
     <nav id="nav_Principale">
         <h2 id="mon_logo">
             <a href="#" tabindex="1">
-                <img src="/img/black_logo_1.svg" alt="logo de Benjamin Marissiaux" width="128">
+                <img src="/img/black_logo_1.svg" alt="logo de Benjamin Marissiaux" id="logo_Benjamin" width="128">
             </a>
         </h2>
 
         <input type="checkbox" id="toggle">
         <label id="bg_menu_btn" for="toggle">
-            <span id="bg_icon"></span>
+            <span id="bg_icon" class="no_js"></span>
         </label>
 
         <ul class="list_nav_principale">
@@ -310,7 +310,7 @@
         <img src="/img" alt="Une photo de Benjamin Marissiaux" itemprop="image">
         <h2 class="titre_section" id="titre_soft_skills">Apprenez&nbsp;-&nbsp;en plus sur moi et mes soft
             skills&nbsp;!</h2>
-        <article>
+        <article class="info">
             <h3 class="non_visible">Soft Skill</h3>
                 <div id="div1">
                     <p id="p1">
@@ -377,7 +377,7 @@
         <h2 class="titre_section projets">
             Mes projets
         </h2>
-        <div id="projets_info">
+        <div class="info">
             <div class="text_projet">
                 <p>
                     J&rsquo;ai commenc&eacute; &agrave; faire des projets en BAC 2 de mon cursus. Je n&rsquo;en avais
@@ -483,7 +483,7 @@
             N&rsquo;h&eacute;sitez pas&nbsp;&agrave; me recontacter en vue d&rsquo;un entretien&nbsp;!
         </p>
         <a href="#footer" tabindex="22" class="btn_rempli">Mes r&eacute;seaux</a>
-        <a href="#section_contact" tabindex="23" class="btn_contour">Contactez&nbsp;-&nbsp;moi</a><br>
+        <a href="#section_contact" tabindex="23" class="btn_contour">Contactez&nbsp;-&nbsp;moi</a>
         <img src="/img/" alt="photo de Benjamin Marissiaux" id="photo_benjamin_mail_tel" itemprop="image">
         <div class="rectangle_gris" id="div_mail_tel">
             <img src="/icons/green_tel.svg" alt="icon de téléphone" itemprop="image" width="50" height="50">
@@ -578,5 +578,6 @@
         </ul>
     </section>
 </footer>
+<script src="./js/main.js" type="module"></script>
 </body>
 </html>

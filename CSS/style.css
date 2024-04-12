@@ -100,6 +100,30 @@ body {
     right: 1em;
 }
 
+.js_enabled {
+    background-color: transparent;
+    position: absolute;
+}
+
+.js_enabled li a {
+    color: white;
+}
+
+.nav_appear {
+    z-index: 1;
+    background-color: white;
+    transition: 1s ease-in-out;
+}
+
+.nav_appeared {
+    position: sticky;
+}
+
+.nav_appear li a {
+    color: #222222;
+    transition: 1s ease-in-out;
+}
+
 header {
     top: 0;
     display: inline-block;
@@ -278,6 +302,7 @@ a {
     width: 8em;
 }
 
+
 #intro {
     background-color: rgba(0, 0, 0, .3);
     color: white;
@@ -391,7 +416,7 @@ a {
 
 #liste_maitrise {
     margin-top: 2em;
-    padding: 0 20em 5em;
+    padding: 0 10em 5em;
     display: grid;
     column-gap: 4em;
     row-gap: 4em;
@@ -533,14 +558,6 @@ abbr {
     margin-bottom: 1.5em;
 }
 
-article {
-    margin: 0 15em;
-    padding-bottom: 4em;
-    display: flex;
-    align-items: center;
-    column-gap: 3em;
-}
-
 article div p, div.text_projet:first-child, div.text_projet:nth-child(2) {
     line-height: 1.7em;
 }
@@ -549,12 +566,19 @@ article div p, div.text_projet:first-child, div.text_projet:nth-child(2) {
     margin-top: 2em;
 }
 
-#projets_info, article {
+.info {
     display: flex;
-    column-gap: 3em;
+    column-gap: 2.5em;
+    row-gap: 4em;
     align-items: center;
     justify-content: center;
     margin-bottom: 5em;
+    flex-wrap: wrap;
+
+}
+
+.info p {
+    max-width: 20em;
 }
 
 .projets {
@@ -577,7 +601,7 @@ article div p, div.text_projet:first-child, div.text_projet:nth-child(2) {
 
 #div_projet {
     text-align: center;
-    min-width: 15em;
+    max-width: 15em;
 }
 
 #div_projet span {
@@ -600,6 +624,8 @@ article div p, div.text_projet:first-child, div.text_projet:nth-child(2) {
 
 #projets div:first-of-type {
     display: flex;
+    flex-wrap: wrap;
+    margin: 2em 4em;
     justify-content: center;
     column-gap: 3em;
 }
@@ -637,14 +663,13 @@ article div p, div.text_projet:first-child, div.text_projet:nth-child(2) {
 }
 
 #photo_benjamin_mail_tel {
-    position: absolute;
-    top: 55%;
-    right: 70%;
+    display: block;
+    margin-top: 35%;
 }
 
 #mail_tel_section {
     position: relative;
-    min-height: 45em;
+    min-height: 43em;
     padding: 4em 1em 4em 10em;
 }
 
@@ -653,7 +678,7 @@ article div p, div.text_projet:first-child, div.text_projet:nth-child(2) {
     max-width: 20em;
     position: absolute;
     right: 15%;
-    top: 35%;
+    top: 40%;
 }
 
 #div_mail_tel p:first-of-type, #mail_tel_email {
@@ -750,7 +775,7 @@ footer h2:first-of-type {
     }
 }
 
-@media (width < 1440px) {
+/*@media (width < 1440px) {
     article {
         margin: 0 6em;
         display: grid;
@@ -771,7 +796,7 @@ footer h2:first-of-type {
         grid-area: div_projet;
     }
 
-}
+}*/
 
 @media (width < 1386px) {
 
@@ -818,7 +843,6 @@ footer h2:first-of-type {
     }
 
     #liste_maitrise {
-        /*margin-top: 2em;*/
         display: grid;
         column-gap: 4em;
         row-gap: 4em;
@@ -826,7 +850,7 @@ footer h2:first-of-type {
             "js css html "
             "sql ts php "
             " pyth rub . ";
-        grid-auto-columns: 2fr 2fr 2fr;
+        grid-auto-columns: 1fr 1fr 1fr;
         justify-content: center;
     }
 
@@ -865,8 +889,13 @@ footer h2:first-of-type {
 }
 
 @media (width < 1365px ) {
+
     header {
         position: relative;
+    }
+
+    .js_enabled li a {
+        color: black;
     }
 
     #toggle {
@@ -892,7 +921,7 @@ footer h2:first-of-type {
         height: 0.3em;
         transform: translateY(-50%);
         -ms-transform: translateY(-50%);
-        background-color: black;
+        background-color: white;
         transition: 0.4s ease-in-out;
         -o-transition: 0.4s ease-in-out;
         -webkit-transition: 0.4s ease-in-out;
@@ -979,7 +1008,7 @@ footer h2:first-of-type {
     #bg_icon:before, #bg_icon:after {
         content: '';
         height: 0.3em;
-        background-color: black;
+        background-color: white;
         position: absolute;
         -webkit-transition: -webkit-transform 0.2s ease-in-out;
         transition: -webkit-transform 0.2s ease-in-out;
@@ -991,20 +1020,51 @@ footer h2:first-of-type {
 }
 
 @media (width < 1100px ) {
-    #projets_info {
+    .info {
         row-gap: 3em;
     }
 
     #div_interest {
         max-width: initial;
     }
+
 }
 
-
 @media (width <= 970px) {
+    #photo_benjamin_mail_tel {
+        display: none;
+    }
+
+    #mail_tel_section div {
+        position: initial;
+        max-width: initial;
+        margin-top: 4em;
+    }
+
+    #mail_tel_section {
+        padding: 5em 2em;
+    }
+
+    #mail_tel_section {
+        max-height: 30em;
+    }
+
     footer {
         flex-wrap: wrap;
     }
+}
+
+@media (width <= 920px) {
+
+    #intro {
+        padding: 15em 5em 15em;
+    }
+
+    #intro h1 {
+        font-size: 2.8125em;
+    }
+
+
 }
 
 
