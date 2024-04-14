@@ -7,6 +7,27 @@ html {
     text-indent: -1000000px;
 }
 
+[class*="reveal-"] {
+    opacity: 0;
+}
+
+.reveal-visible{
+    opacity: 1;
+    transition: 1.3s cubic-bezier(.5, 0, 0, .99);
+}
+
+.reveal-2 {
+    transition-delay: .5s;
+}
+
+.reveal-3 {
+    transition-delay: 1s;
+}
+
+.reveal-4{
+    transition-delay: 1.5s;
+}
+
 #toggle {
     opacity: 0;
 }
@@ -664,13 +685,13 @@ article div p, div.text_projet:first-child, div.text_projet:nth-child(2) {
 
 #photo_benjamin_mail_tel {
     display: block;
-    margin-top: 35%;
+    margin-top: 20%;
 }
 
 
 #mail_tel_section {
     position: relative;
-    min-height: 43em;
+    min-height: 50em;
     padding: 4em 1em 4em 10em;
 }
 
@@ -1069,9 +1090,13 @@ footer h2:first-of-type {
 
 @media (width <= 750px ) {
 
+    #languages img {
+        margin-top: 1.8em;
+        margin-bottom: .8em;
+    }
+
     #xp {
         padding: 4em 4em;
-
     }
 
     #liste_xp {
@@ -1092,6 +1117,33 @@ footer h2:first-of-type {
 
     .p_xp {
         font-size: 1.6125em;
+    }
+
+    #languages {
+        padding: 4em 8em;
+    }
+
+    #languages h2 {
+        margin-bottom: .25em;
+    }
+
+    #liste_maitrise {
+        display: initial;
+    }
+
+    #java, #css, #html, #sql, #ts, #php, #python, #rub {
+        margin-bottom: 5em;
+        text-align: initial;
+    }
+
+    #java {
+        margin-top: 5em;
+    }
+
+    .moyenne {
+        line-height: initial;
+        font-size: 1.375em;
+        display: block;
     }
 
 }
