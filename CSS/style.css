@@ -11,7 +11,7 @@ html {
     opacity: 0;
 }
 
-.reveal-visible{
+.reveal-visible {
     opacity: 1;
     transition: 1.3s cubic-bezier(.5, 0, 0, .99);
 }
@@ -24,7 +24,7 @@ html {
     transition-delay: 1s;
 }
 
-.reveal-4{
+.reveal-4 {
     transition-delay: 1.5s;
 }
 
@@ -796,29 +796,6 @@ footer h2:first-of-type {
         display: none;
     }
 }
-
-/*@media (width < 1440px) {
-    article {
-        margin: 0 6em;
-        display: grid;
-        row-gap: 3em;
-        grid-template-areas: ". div1 div2 ."
-                             ". div_projet div_projet .";
-    }
-
-    #div1 {
-        grid-area: div1;
-    }
-
-    #div2 {
-        grid-area: div2;
-    }
-
-    #div_projet {
-        grid-area: div_projet;
-    }
-
-}*/
 
 @media (width < 1386px) {
 
