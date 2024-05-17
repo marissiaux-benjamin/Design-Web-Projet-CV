@@ -394,6 +394,14 @@ a {
     padding: 2em 3em 3em 2em;
 }
 
+#projets div img{
+    width: 10em;
+    height: max-content;
+    border-radius: 10px;
+}
+
+
+
 .p_xp {
     font-size: 2.525em;
     font-weight: bold;
