@@ -323,6 +323,11 @@ a {
     width: 8em;
 }
 
+#mon_logo a{
+    display: inline-block;
+    background-image: url("img/SVG/white_logo_1.svg");
+}
+
 
 #intro {
     background-color: rgba(0, 0, 0, .3);
