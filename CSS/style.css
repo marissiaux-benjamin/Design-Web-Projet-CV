@@ -323,12 +323,6 @@ a {
     width: 8em;
 }
 
-#mon_logo a{
-    display: inline-block;
-    background-image: url("img/SVG/white_logo_1.svg");
-}
-
-
 #intro {
     background-color: rgba(0, 0, 0, .3);
     color: white;
@@ -399,13 +393,11 @@ a {
     padding: 2em 3em 3em 2em;
 }
 
-#projets div img{
-    width: 10em;
-    height: max-content;
+.phone_dimension {
+    max-width: 10em;
+    height: auto;
     border-radius: 10px;
 }
-
-
 
 .p_xp {
     font-size: 2.525em;
@@ -427,6 +419,28 @@ a {
 
 #prendre_rdv {
     margin-bottom: 2em;
+}
+
+#about_me {
+    position: relative;
+}
+
+.bras-bas-photo{
+    display: block;
+    position: absolute;
+    left: 25%;
+    top: -80%;
+    z-index: -1;
+}
+
+#about_me div:first-of-type img {
+
+}
+
+.bras-bas-photo {
+    position: absolute;
+    bottom: -50%;
+    left: 15%;
 }
 
 #languages {
@@ -515,6 +529,10 @@ abbr {
     font-size: 1.0625em;
     font-weight: lighter;
     line-height: 1.3em;
+}
+
+#section_contact{
+    padding-bottom: 40em;
 }
 
 #phrase_contact {
@@ -697,22 +715,23 @@ article div p, div.text_projet:first-child, div.text_projet:nth-child(2) {
 }
 
 #photo_benjamin_mail_tel {
-    display: block;
-    margin-top: 20%;
+    position: absolute;
+    top: 20%;
+    right: 40%;
 }
 
 
 #mail_tel_section {
     position: relative;
     min-height: 50em;
-    padding: 4em 1em 4em 10em;
+    padding: 4em 1em 21em 10em;
 }
 
 #mail_tel_section div {
     background-color: #fafafa;
     max-width: 20em;
     position: absolute;
-    right: 15%;
+    right:5%;
     top: 40%;
 }
 

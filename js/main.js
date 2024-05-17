@@ -4,7 +4,7 @@ import {settings} from "./settings";
 settings.noJs.classList.add('js_enabled');
 settings.header.classList.remove('no_js');
 settings.monLogoChange.src = settings.whiteLogoSource;
-window.addEventListener("scroll", e => {
+window.addEventListener("scroll", () => {
 
     if (settings.header.getBoundingClientRect().bottom <= 0) {
         settings.header.classList.add(settings.navAppear);
